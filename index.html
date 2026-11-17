@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GEO — видимость бизнеса в ответах ИИ</title>
-<meta name="description" content="GEO — делаем так, чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen находили, понимали и советовали ваш бизнес. Запуск за 2–4 недели, 200 000 ₸, половина оплаты после результата.">
+<title>Tessera — видимость бизнеса в ответах ИИ</title>
+<meta name="description" content="Tessera — GEO-агентство: делаем так, чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen находили, понимали и советовали ваш бизнес. Запуск за 2–4 недели, 200 000 ₸, половина оплаты после результата.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "GEO",
+  "name": "Tessera",
   "description": "Generative Engine Optimization: подготовка бизнеса к тому, чтобы ИИ-ассистенты (ChatGPT, Gemini, Claude, DeepSeek, Qwen) находили его, понимали и называли в ответах.",
   "areaServed": "Казахстан",
   "knowsLanguage": ["ru", "kk", "en"],
@@ -273,13 +273,13 @@ body.loading footer{display:none}
 <div class="grain" aria-hidden="true"></div>
 
 <div id="loader" aria-hidden="true">
-  <div class="top"><span class="label">GEO / Generative Engine Optimization</span><span class="label">Казахстан</span></div>
+  <div class="top"><span class="label">Tessera / Generative Engine Optimization</span><span class="label">Казахстан</span></div>
   <div class="bot"><span class="label" id="ldText">Собираем данные</span><span class="count"><span id="ldNum">0</span></span></div>
   <div class="bar"><i id="ldBar"></i></div>
 </div>
 
 <header class="nav" id="nav">
-  <a class="logo" href="#home" aria-label="GEO — на главную"><i></i>GEO</a>
+  <a class="logo" href="#home" aria-label="Tessera — на главную"><i></i>Tessera</a>
   <nav class="links" id="links">
     <a href="#home" data-r="home">Главная</a>
     <a href="#services" data-r="services">Услуги</a>
@@ -571,12 +571,12 @@ body.loading footer{display:none}
 <footer>
   <div class="wrap">
     <div class="col">
-      <a class="logo" href="#home" style="color:#fff"><i></i>GEO</a>
+      <a class="logo" href="#home" style="color:#fff"><i></i>Tessera</a>
       <p style="max-width:340px;margin-top:10px">Делаем бизнес видимым для ChatGPT, Gemini, Claude, DeepSeek и Qwen. Казахстан.</p>
     </div>
     <div class="col"><span class="label" style="margin-bottom:8px">Страницы</span><a href="#home">Главная</a><a href="#services">Услуги и цены</a><a href="#cases">Кейсы</a><a href="#faq">FAQ</a><a href="#contacts">Контакты</a></div>
     <div class="col"><span class="label" style="margin-bottom:8px">Коротко</span><p>200 000 ₸ · 2–4 недели</p><p>50% после результата</p><p>Сайты на ru / kk / en</p></div>
-    <div class="copy"><span>© 2026 GEO</span><span>Весь текст этого сайта лежит в HTML и читается ИИ</span></div>
+    <div class="copy"><span>© 2026 Tessera</span><span>Весь текст этого сайта лежит в HTML и читается ИИ</span></div>
   </div>
 </footer>
 
@@ -592,11 +592,11 @@ var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAl
 var clamp = function(v,a,b){ return Math.max(a, Math.min(b, v)); };
 var ROUTES = ["home","services","cases","faq","contacts"];
 var TITLES = {
-  home: "GEO — видимость бизнеса в ответах ИИ",
-  services: "Услуги и цены — GEO",
-  cases: "Кейсы — GEO",
-  faq: "Частые вопросы — GEO",
-  contacts: "Контакты — GEO"
+  home: "Tessera — видимость бизнеса в ответах ИИ",
+  services: "Услуги и цены — Tessera",
+  cases: "Кейсы — Tessera",
+  faq: "Частые вопросы — Tessera",
+  contacts: "Контакты — Tessera"
 };
 var route = null;
 var loaded = false;
@@ -708,7 +708,7 @@ $("#leadForm").addEventListener("submit", function(e){
   ["name","biz","contact"].forEach(function(k){ f[k].style.borderColor = miss.indexOf(k) >= 0 ? "#fff" : ""; });
   if(miss.length){ f[miss[0]].focus(); return; }
   var lines = [
-    "Заявка на GEO",
+    "Заявка в Tessera",
     "Имя: " + f.name.value.trim(),
     "Компания и ниша: " + f.biz.value.trim(),
     f.city.value.trim() ? "Город: " + f.city.value.trim() : "",
@@ -908,7 +908,7 @@ function initGL(){
   var textsReady = false;
 
   function buildTexts(){
-    heroShapes[0] = text("GEO", 7.6, false);
+    heroShapes[0] = text("TESSERA", 8.2, false);
     heroShapes[2] = text("?", 4.6, true);
     heroShapes[3] = text("75%", 7.2, false);
     textsReady = true;
