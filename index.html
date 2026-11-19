@@ -98,6 +98,7 @@ body.nav-open .burger i:nth-child(2){top:19px;transform:rotate(-45deg)}
 .hero-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .stage{position:absolute;left:var(--pad);bottom:clamp(84px,13vh,150px);max-width:640px;pointer-events:none}
 .stage.on{pointer-events:auto}
+.stage[data-i="0"]{max-width:none}
 .stage .ln{display:block;overflow:hidden}
 .stage .ln>span{display:block;transform:translateY(105%);opacity:0;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .6s}
 .stage.on .ln>span{transform:none;opacity:1}
@@ -277,7 +278,7 @@ body.loading footer{display:none}
   .faq .a{padding:0 0 26px 48px}
   footer .wrap{grid-template-columns:1fr}
   .hero-meta{display:none}
-  .stage{right:var(--pad);bottom:96px}
+  .stage{right:var(--pad);bottom:124px}
 }
 @media (max-width:560px){.steps,.dirs{grid-template-columns:1fr}}
 </style>
@@ -293,7 +294,7 @@ body.loading footer{display:none}
 </div>
 
 <header class="nav" id="nav">
-  <a class="logo" href="#home" aria-label="Tessera — на главную"><i></i>Tessera</a>
+  <a class="logo" href="#home" aria-label="Tessera — на главную">Tessera</a>
   <nav class="links" id="links">
     <a href="#home" data-r="home">Главная</a>
     <a href="#services" data-r="services">Услуги</a>
@@ -311,8 +312,8 @@ body.loading footer{display:none}
     <div class="hero-sticky">
       <div class="stage" data-i="0">
         <span class="ln"><span class="label">AI-агентство · Казахстан</span></span>
-        <h1 class="title"><span class="ln"><span>Клиенты, продажи</span></span><span class="ln"><span>и контент — на ИИ</span></span></h1>
-        <span class="ln"><span><p>SEO и GEO продвижение, AI-видео, собственные CRM и ИИ-боты, которые продают за вас.</p></span></span>
+        <h1 class="title"><span class="ln"><span>ЦИФРОВЫЕ ПРОДУКТЫ</span></span><span class="ln"><span>ДЛЯ БИЗНЕСА</span></span></h1>
+        <span class="ln"><span><p>Сайты, сервисы и личные кабинеты,<br>которые решают конкретную задачу бизнеса.</p></span></span>
       </div>
       <div class="stage" data-i="1">
         <span class="ln"><span class="label"><b>01</b> — SEO и GEO</span></span>
@@ -723,7 +724,7 @@ body.loading footer{display:none}
 <footer>
   <div class="wrap">
     <div class="col">
-      <a class="logo" href="#home" style="color:#fff"><i></i>Tessera</a>
+      <a class="logo" href="#home" style="color:#fff">Tessera</a>
       <p style="max-width:340px;margin-top:10px">SEO и GEO, AI-видео, собственные CRM и ИИ-боты для продаж. Казахстан.</p>
     </div>
     <div class="col"><span class="label" style="margin-bottom:8px">Страницы</span><a href="#home">Главная</a><a href="#services">Услуги</a><a href="#cases">Кейсы</a><a href="#faq">FAQ</a><a href="#contacts">Контакты</a></div>
