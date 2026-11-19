@@ -347,22 +347,10 @@ body.loading footer{display:none}
         <span class="ln"><span><p>Видео привлекает, SEO и GEO приводят из поиска, бот продаёт, CRM ничего не теряет.</p></span></span>
         <span class="ln"><span class="cta"><a class="btn" href="#contacts">Оставить заявку <span class="ar">↗</span></a><a class="btn ghost" href="#services">Все услуги</a></span></span>
       </div>
-      <div class="hero-meta">
-        <div class="num"><b id="stNum">01</b> / <span id="stTotal">06</span></div>
-        <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
-      </div>
-      <div class="hbar" id="hbar"><span class="label">Задача</span><span class="trk"><b id="hfill"></b><i id="hdot"></i></span><span class="label">Результат</span></div>
     </div>
   </div>
 
   <div class="after-hero">
-    <div class="marquee" aria-label="Направления Tessera">
-      <div class="track">
-        <span>SEO</span><span>GEO</span><span>AI-видео</span><span>CRM</span><span>ИИ-боты</span>
-        <span>SEO</span><span>GEO</span><span>AI-видео</span><span>CRM</span><span>ИИ-боты</span>
-      </div>
-    </div>
-
     <section class="sec">
       <div class="wrap">
         <div class="sec-head rv">
@@ -807,7 +795,6 @@ window.addEventListener("hashchange", setRoute);
 $("#burger").addEventListener("click", function(){ document.body.classList.toggle("nav-open"); });
 
 var stageEls = $$(".stage");
-var dotEls = $$("#dots i");
 var curStage = -1;
 function heroProgress(){
   var h = $("#hero");
@@ -820,17 +807,12 @@ function setStage(i){
   if(i === curStage) return;
   curStage = i;
   stageEls.forEach(function(s, k){ s.classList.toggle("on", k === i); });
-  dotEls.forEach(function(d, k){ d.classList.toggle("on", k === i); });
-  $("#stNum").textContent = "0" + (i + 1);
-  $("#stTotal").textContent = "0" + stageEls.length;
 }
 function onScroll(){
   $("#nav").classList.toggle("solid", window.scrollY > 40);
   if(route !== "home" || !loaded) return;
   var p = heroProgress();
   setStage(Math.round(p * (stageEls.length - 1)));
-  $("#hfill").style.width = (p * 100) + "%";
-  $("#hdot").style.left = (p * 100) + "%";
 }
 window.addEventListener("scroll", onScroll, { passive: true });
 
