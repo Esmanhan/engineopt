@@ -7,7 +7,7 @@
 <meta name="description" content="Tessera — AI-агентство в Казахстане: SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,8 +42,8 @@
   --bg:#000;--fg:#fff;--mute:rgba(255,255,255,.58);--dim:rgba(255,255,255,.34);
   --line:rgba(255,255,255,.13);--line2:rgba(255,255,255,.28);
   --pad:clamp(20px,5vw,72px);
-  --display:'Unbounded',system-ui,sans-serif;
-  --body:'Manrope',system-ui,sans-serif;
+  --display:'Onest',system-ui,sans-serif;
+  --body:'Onest',system-ui,sans-serif;
   --mono:'JetBrains Mono',ui-monospace,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -58,8 +58,10 @@ main,header,footer{position:relative;z-index:2}
 
 .label{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
 .label b{color:var(--fg);font-weight:500}
-h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:1.04}
-h3{font-weight:500;letter-spacing:-.01em;line-height:1.2}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.045em;line-height:.92}
+h1,h2{text-transform:uppercase}
+.sec-head h2:after,.page-head h1:after,.cta-final h2:after{content:"."}
+h3{font-weight:600;letter-spacing:-.025em;line-height:1.15}
 
 #loader{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;justify-content:space-between;padding:28px var(--pad);pointer-events:none;transition:opacity .9s ease}
 #loader.done{opacity:0}
@@ -81,8 +83,8 @@ body.loading .nav{opacity:0;transform:translateY(-20px)}
 .btn:hover{transform:translateY(-2px)}
 .btn.ghost{background:transparent;color:#fff;border-color:var(--line2)}
 .btn.ghost:hover{border-color:#fff}
-.btn .ar{transition:transform .25s}
-.btn:hover .ar{transform:translateX(4px)}
+.ar{display:inline-block;transition:transform .25s}
+.btn:hover .ar,.dir:hover .ar,a:hover>.ar{transform:translate(3px,-3px)}
 .links .btn{color:#000;padding:10px 18px}
 .links .btn.cur:after{display:none}
 .burger{display:none;background:none;border:0;color:#fff;cursor:pointer;width:40px;height:40px;position:relative}
@@ -96,7 +98,7 @@ body.nav-open .burger i:nth-child(2){top:19px;transform:rotate(-45deg)}
 
 .hero{height:660vh;position:relative}
 .hero-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
-.stage{position:absolute;left:var(--pad);bottom:clamp(84px,13vh,150px);max-width:640px;pointer-events:none}
+.stage{position:absolute;left:var(--pad);bottom:clamp(84px,13vh,150px);max-width:860px;pointer-events:none}
 .stage.on{pointer-events:auto}
 .stage[data-i="0"]{max-width:none}
 .stage .ln{display:block;overflow:hidden}
@@ -106,7 +108,7 @@ body.nav-open .burger i:nth-child(2){top:19px;transform:rotate(-45deg)}
 .stage.on .ln:nth-child(3)>span{transition-delay:.16s}
 .stage.on .ln:nth-child(4)>span{transition-delay:.24s}
 .stage.on .ln:nth-child(5)>span{transition-delay:.32s}
-.stage .title{font-size:clamp(30px,4.4vw,62px);margin:14px 0 18px}
+.stage .title{font-size:clamp(34px,5.4vw,80px);margin:14px 0 20px}
 .stage p{color:var(--mute);font-size:clamp(15px,1.25vw,18px);max-width:520px}
 .stage .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
 .hero-meta{position:absolute;right:var(--pad);bottom:clamp(84px,13vh,150px);display:flex;flex-direction:column;align-items:flex-end;gap:16px;transition:opacity .8s}
@@ -115,11 +117,12 @@ body.nav-open .burger i:nth-child(2){top:19px;transform:rotate(-45deg)}
 .dots{display:flex;flex-direction:column;gap:10px}
 .dots i{width:6px;height:6px;border-radius:50%;border:1px solid var(--line2);transition:.4s}
 .dots i.on{background:#fff;border-color:#fff;transform:scale(1.3)}
-.hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;transition:opacity .6s}
-.hint .line{width:1px;height:42px;background:var(--line);position:relative;overflow:hidden}
-.hint .line:after{content:"";position:absolute;left:0;width:1px;height:16px;background:#fff;animation:drip 1.8s infinite}
+.hbar{position:absolute;left:var(--pad);right:var(--pad);bottom:30px;display:flex;align-items:center;gap:18px;transition:opacity .8s}
+.hbar .trk{flex:1;height:1px;background:var(--line);position:relative}
+.hbar b{position:absolute;left:0;top:0;height:1px;width:0;background:#fff}
+.hbar i{position:absolute;top:-4px;left:0;width:9px;height:9px;margin-left:-4px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}
 @keyframes drip{0%{top:-16px}100%{top:42px}}
-body.loading .hero-meta,body.loading .hint{opacity:0}
+body.loading .hero-meta,body.loading .hbar{opacity:0}
 
 .wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
 .sec{padding:clamp(80px,12vw,150px) 0;position:relative}
@@ -170,7 +173,10 @@ textarea{min-height:110px;resize:vertical}
 .cta-final h2{font-size:clamp(36px,7vw,104px);max-width:1000px;margin:20px auto 34px}
 
 .page-head{padding-top:clamp(140px,22vh,220px);padding-bottom:clamp(50px,7vw,90px)}
-.page-head h1{font-size:clamp(44px,9vw,132px);margin:18px 0 26px}
+.page-head h1{font-size:clamp(40px,8vw,120px);margin:18px 0 26px;position:relative}
+.page-head{position:relative}
+.page-head:before{content:attr(data-word);position:absolute;right:calc(var(--pad) * -1);top:clamp(110px,18vh,180px);font-family:var(--display);font-weight:900;font-size:clamp(140px,24vw,400px);line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.16);pointer-events:none;z-index:-1;white-space:nowrap;text-transform:uppercase}
+.view{overflow-x:clip}
 .page-head p{color:var(--mute);font-size:clamp(16px,1.4vw,20px);max-width:620px}
 .page-body{background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.8) 300px)}
 
@@ -300,7 +306,7 @@ body.loading footer{display:none}
     <a href="#services" data-r="services">Услуги</a>
     <a href="#cases" data-r="cases">Кейсы</a>
     <a href="#faq" data-r="faq">FAQ</a>
-    <a href="#contacts" data-r="contacts" class="btn">Оставить заявку <span class="ar">→</span></a>
+    <a href="#contacts" data-r="contacts" class="btn">Оставить заявку <span class="ar">↗</span></a>
   </nav>
   <button class="burger" id="burger" aria-label="Меню"><i></i><i></i></button>
 </header>
@@ -339,13 +345,13 @@ body.loading footer{display:none}
         <span class="ln"><span class="label">Tessera</span></span>
         <h2 class="title"><span class="ln"><span>Одна команда —</span></span><span class="ln"><span>весь путь клиента</span></span></h2>
         <span class="ln"><span><p>Видео привлекает, SEO и GEO приводят из поиска, бот продаёт, CRM ничего не теряет.</p></span></span>
-        <span class="ln"><span class="cta"><a class="btn" href="#contacts">Оставить заявку <span class="ar">→</span></a><a class="btn ghost" href="#services">Все услуги</a></span></span>
+        <span class="ln"><span class="cta"><a class="btn" href="#contacts">Оставить заявку <span class="ar">↗</span></a><a class="btn ghost" href="#services">Все услуги</a></span></span>
       </div>
       <div class="hero-meta">
         <div class="num"><b id="stNum">01</b> / <span id="stTotal">06</span></div>
         <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
-      <div class="hint" id="hint"><span class="label">Листайте</span><span class="line"></span></div>
+      <div class="hbar" id="hbar"><span class="label">Задача</span><span class="trk"><b id="hfill"></b><i id="hdot"></i></span><span class="label">Результат</span></div>
     </div>
   </div>
 
@@ -364,10 +370,10 @@ body.loading footer{display:none}
           <p>Можно взять одно направление или собрать всё вместе: каждое усиливает остальные.</p>
         </div>
         <div class="dirs">
-          <a class="dir rv" href="#seo-geo"><span class="n">01</span><h3>SEO и GEO продвижение</h3><p>Google, Яндекс и ответы ChatGPT, Gemini, Claude, DeepSeek, Qwen.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
-          <a class="dir rv" href="#ai-video"><span class="n">02</span><h3>AI-видео</h3><p>Рекламные ролики, Reels, видео о продукте и говорящие аватары.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
-          <a class="dir rv" href="#crm"><span class="n">03</span><h3>Собственная CRM</h3><p>Заявки, воронка, клиенты, оплаты и аналитика под ваш процесс.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
-          <a class="dir rv" href="#ai-bots"><span class="n">04</span><h3>ИИ-бот — менеджер по продажам</h3><p>Консультирует, отвечает на вопросы и записывает клиентов круглосуточно.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
+          <a class="dir rv" href="#seo-geo"><span class="n">01</span><h3>SEO и GEO продвижение</h3><p>Google, Яндекс и ответы ChatGPT, Gemini, Claude, DeepSeek, Qwen.</p><span class="more">Подробнее <span class="ar">↗</span></span></a>
+          <a class="dir rv" href="#ai-video"><span class="n">02</span><h3>AI-видео</h3><p>Рекламные ролики, Reels, видео о продукте и говорящие аватары.</p><span class="more">Подробнее <span class="ar">↗</span></span></a>
+          <a class="dir rv" href="#crm"><span class="n">03</span><h3>Собственная CRM</h3><p>Заявки, воронка, клиенты, оплаты и аналитика под ваш процесс.</p><span class="more">Подробнее <span class="ar">↗</span></span></a>
+          <a class="dir rv" href="#ai-bots"><span class="n">04</span><h3>ИИ-бот — менеджер по продажам</h3><p>Консультирует, отвечает на вопросы и записывает клиентов круглосуточно.</p><span class="more">Подробнее <span class="ar">↗</span></span></a>
         </div>
       </div>
     </section>
@@ -397,7 +403,7 @@ body.loading footer{display:none}
           <div>
             <h3 style="font-size:clamp(22px,2.2vw,30px)">Упоминания в ответах ChatGPT</h3>
             <p>Было: школу не называли ни в одном ответе. После запуска сайта под ИИ и выравнивания данных во внешних источниках школу упоминают в трёх ответах из четырёх.</p>
-            <a class="btn ghost" href="#cases">Подробнее о кейсе <span class="ar">→</span></a>
+            <a class="btn ghost" href="#cases">Подробнее о кейсе <span class="ar">↗</span></a>
           </div>
         </div>
       </div>
@@ -433,14 +439,14 @@ body.loading footer{display:none}
       <div class="wrap rv">
         <span class="label">Следующий шаг</span>
         <h2>Пусть ИИ работает на ваши продажи</h2>
-        <div class="row" style="justify-content:center"><a class="btn" href="#contacts">Оставить заявку <span class="ar">→</span></a><a class="btn ghost" href="#faq">Частые вопросы</a></div>
+        <div class="row" style="justify-content:center"><a class="btn" href="#contacts">Оставить заявку <span class="ar">↗</span></a><a class="btn ghost" href="#faq">Частые вопросы</a></div>
       </div>
     </section>
   </div>
 </section>
 
 <section class="view" data-view="services">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="УСЛУГИ">
     <span class="label rv">Услуги</span>
     <h1 class="rv">Четыре направления<br>Tessera</h1>
     <p class="rv">Привлекаем, продаём и учитываем клиентов с помощью ИИ. Берите одно направление или всё вместе.</p>
@@ -465,7 +471,7 @@ body.loading footer{display:none}
 </section>
 
 <section class="view" data-view="seo-geo">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="SEO">
     <span class="label rv"><a href="#services">Услуги</a> / 01</span>
     <h1 class="rv">SEO и GEO<br>продвижение</h1>
     <p class="rv">SEO — чтобы вас находили в Google и Яндексе. GEO — чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen называли вас в ответах. Делаем оба, потому что они опираются на одно и то же: понятный сайт и одинаковые факты везде.</p>
@@ -498,7 +504,7 @@ body.loading footer{display:none}
               <li>2GIS, Яндекс Карты, Google Maps</li>
               <li>Замер до и после</li>
             </ul>
-            <a class="btn" href="#contacts">Начать <span class="ar">→</span></a>
+            <a class="btn" href="#contacts">Начать <span class="ar">↗</span></a>
           </div>
           <div class="plan rv">
             <span class="label">SEO и сопровождение</span>
@@ -510,7 +516,7 @@ body.loading footer{display:none}
               <li>Обновление цен, расписаний и фактов</li>
               <li>Новые страницы под новые направления</li>
             </ul>
-            <a class="btn ghost" href="#contacts">Обсудить <span class="ar">→</span></a>
+            <a class="btn ghost" href="#contacts">Обсудить <span class="ar">↗</span></a>
           </div>
         </div>
       </section>
@@ -519,7 +525,7 @@ body.loading footer{display:none}
 </section>
 
 <section class="view" data-view="ai-video">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="VIDEO">
     <span class="label rv"><a href="#services">Услуги</a> / 02</span>
     <h1 class="rv">AI-видео<br>генерация</h1>
     <p class="rv">Видео для рекламы и соцсетей, созданное нейросетями. Вы получаете готовые ролики без студии, актёров и съёмочных дней.</p>
@@ -542,14 +548,14 @@ body.loading footer{display:none}
           <div class="step rv"><div class="n">03</div><h3>Генерация и монтаж</h3><p>Создаём кадры, озвучку и музыку, собираем ролик.</p></div>
           <div class="step rv"><div class="n">04</div><h3>Правки</h3><p>Вносим правки и отдаём файлы под нужные форматы.</p></div>
         </div>
-        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Заказать видео <span class="ar">→</span></a></div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Заказать видео <span class="ar">↗</span></a></div>
       </section>
     </div>
   </div>
 </section>
 
 <section class="view" data-view="crm">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="CRM">
     <span class="label rv"><a href="#services">Услуги</a> / 03</span>
     <h1 class="rv">Собственная<br>CRM</h1>
     <p class="rv">Не подстраивайте бизнес под чужую систему. Мы соберём CRM под ваш процесс: только то, что нужно вашей команде, и ничего лишнего.</p>
@@ -573,14 +579,14 @@ body.loading footer{display:none}
           <div class="step rv"><div class="n">03</div><h3>Разработка</h3><p>Собираем CRM и подключаем каналы и бота.</p></div>
           <div class="step rv"><div class="n">04</div><h3>Запуск</h3><p>Переносим данные и обучаем команду.</p></div>
         </div>
-        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Обсудить CRM <span class="ar">→</span></a></div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Обсудить CRM <span class="ar">↗</span></a></div>
       </section>
     </div>
   </div>
 </section>
 
 <section class="view" data-view="ai-bots">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="BOT">
     <span class="label rv"><a href="#services">Услуги</a> / 04</span>
     <h1 class="rv">ИИ-бот —<br>менеджер по продажам</h1>
     <p class="rv">Клиент пишет ночью, в выходные или когда все менеджеры заняты — и сразу получает ответ. Бот консультирует, снимает возражения и доводит до записи.</p>
@@ -603,14 +609,14 @@ body.loading footer{display:none}
           <div class="step rv"><div class="n">03</div><h3>Подключение</h3><p>Мессенджеры, сайт и CRM.</p></div>
           <div class="step rv"><div class="n">04</div><h3>Тест и запуск</h3><p>Проверяем на реальных вопросах и дообучаем.</p></div>
         </div>
-        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Хочу бота <span class="ar">→</span></a></div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Хочу бота <span class="ar">↗</span></a></div>
       </section>
     </div>
   </div>
 </section>
 
 <section class="view" data-view="cases">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="КЕЙСЫ">
     <span class="label rv">Кейсы</span>
     <h1 class="rv">Цифры,<br>а не обещания</h1>
     <p class="rv">Показываем только реальные замеры: что ИИ отвечал до работы и что отвечает после.</p>
@@ -652,7 +658,7 @@ body.loading footer{display:none}
 </section>
 
 <section class="view" data-view="faq">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="FAQ">
     <span class="label rv">FAQ</span>
     <h1 class="rv">Частые<br>вопросы</h1>
     <p class="rv">Если вашего вопроса здесь нет, напишите нам: ответим и добавим его сюда.</p>
@@ -684,7 +690,7 @@ body.loading footer{display:none}
 </section>
 
 <section class="view" data-view="contacts">
-  <div class="wrap page-head">
+  <div class="wrap page-head" data-word="СВЯЗЬ">
     <span class="label rv">Контакты</span>
     <h1 class="rv">Обсудим<br>ваш бизнес</h1>
     <p class="rv">Расскажите о бизнесе и задаче. Ответим, какие направления дадут результат быстрее всего, и назовём сроки и цену.</p>
@@ -708,7 +714,7 @@ body.loading footer{display:none}
         <label class="field"><span>Сайт или Instagram</span><input name="site" placeholder="если есть"></label>
         <label class="field"><span>Телефон или Telegram</span><input name="contact" required placeholder="+7 …"></label>
         <label class="field"><span>Комментарий</span><textarea name="msg" placeholder="Что хотите получить"></textarea></label>
-        <button class="btn" type="submit" style="justify-self:start">Подготовить заявку <span class="ar">→</span></button>
+        <button class="btn" type="submit" style="justify-self:start">Подготовить заявку <span class="ar">↗</span></button>
         <div class="result" id="leadResult">
           <div class="prompt" id="leadText" style="white-space:pre-wrap"></div>
           <div class="row" style="margin-top:12px"><button class="btn" type="button" id="leadCopy">Скопировать текст заявки</button><span class="ok" id="leadOk"></span></div>
@@ -823,7 +829,8 @@ function onScroll(){
   if(route !== "home" || !loaded) return;
   var p = heroProgress();
   setStage(Math.round(p * (stageEls.length - 1)));
-  $("#hint").style.opacity = p > 0.03 ? 0 : 1;
+  $("#hfill").style.width = (p * 100) + "%";
+  $("#hdot").style.left = (p * 100) + "%";
 }
 window.addEventListener("scroll", onScroll, { passive: true });
 
@@ -1078,7 +1085,7 @@ function initGL(){
   }
   function text(str, size, byHeight){
     var c = document.createElement("canvas"), ctx = c.getContext("2d"), fs = 220;
-    var font = "800 " + fs + "px Unbounded, Arial Black, sans-serif";
+    var font = "900 " + fs + "px Onest, Arial Black, sans-serif";
     ctx.font = font;
     var lines = str.split("\n"), mw = 0;
     lines.forEach(function(l){ mw = Math.max(mw, ctx.measureText(l).width); });
@@ -1271,7 +1278,7 @@ setRoute();
 var fontReady = new Promise(function(res){
   var done = false, fin = function(){ if(!done){ done = true; res(); } };
   setTimeout(fin, 2600);
-  try { document.fonts.load("800 220px Unbounded").then(function(){ return document.fonts.ready; }).then(fin, fin); } catch(e){ fin(); }
+  try { document.fonts.load("900 220px Onest").then(function(){ return document.fonts.ready; }).then(fin, fin); } catch(e){ fin(); }
 });
 fontReady.then(function(){ if(PG) PG.buildTexts(); });
 
