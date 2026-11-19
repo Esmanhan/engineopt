@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tessera — видимость бизнеса в ответах ИИ</title>
-<meta name="description" content="Tessera — GEO-агентство: делаем так, чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen находили, понимали и советовали ваш бизнес. Запуск за 2–4 недели, 200 000 ₸, половина оплаты после результата.">
+<title>Tessera — AI-агентство: SEO и GEO, AI-видео, CRM, ИИ-боты</title>
+<meta name="description" content="Tessera — AI-агентство в Казахстане: SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,16 +13,15 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Tessera",
-  "description": "Generative Engine Optimization: подготовка бизнеса к тому, чтобы ИИ-ассистенты (ChatGPT, Gemini, Claude, DeepSeek, Qwen) находили его, понимали и называли в ответах.",
+  "description": "AI-агентство: SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам.",
   "areaServed": "Казахстан",
   "knowsLanguage": ["ru", "kk", "en"],
-  "makesOffer": {
-    "@type": "Offer",
-    "name": "GEO-запуск",
-    "price": "200000",
-    "priceCurrency": "KZT",
-    "description": "2–4 недели. 100 000 ₸ предоплата, 100 000 ₸ после результата."
-  }
+  "makesOffer": [
+    {"@type": "Offer", "name": "GEO-запуск", "price": "200000", "priceCurrency": "KZT", "description": "SEO и GEO: видимость в Google, Яндексе и ответах ИИ-ассистентов. 2–4 недели. 100 000 ₸ предоплата, 100 000 ₸ после результата."},
+    {"@type": "Offer", "name": "AI-видео генерация", "description": "Рекламные ролики, Reels, TikTok, Shorts, ролики о продукте и говорящие аватары, созданные ИИ. Цена после брифа."},
+    {"@type": "Offer", "name": "Собственная CRM", "description": "CRM под процесс бизнеса: заявки из всех каналов, воронка, клиенты, оплаты, аналитика. Цена после разбора процесса."},
+    {"@type": "Offer", "name": "ИИ-бот — консультант по продажам", "description": "Бот в WhatsApp, Telegram, Instagram и на сайте: консультирует, записывает клиентов, передаёт заявки менеджеру и пишет их в CRM. Цена после брифа."}
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -33,6 +32,7 @@
     {"@type":"Question","name":"Что такое GEO?","acceptedAnswer":{"@type":"Answer","text":"Generative Engine Optimization — подготовка бизнеса к тому, чтобы ИИ-ассистенты (ChatGPT, Gemini, Claude, DeepSeek, Qwen) находили его, правильно понимали и называли в ответах на вопросы клиентов."}},
     {"@type":"Question","name":"Сколько стоит GEO-запуск?","acceptedAnswer":{"@type":"Answer","text":"200 000 ₸: 100 000 ₸ предоплата и 100 000 ₸ после результата."}},
     {"@type":"Question","name":"Сколько длится работа?","acceptedAnswer":{"@type":"Answer","text":"2–4 недели."}},
+    {"@type":"Question","name":"Какие услуги оказывает Tessera?","acceptedAnswer":{"@type":"Answer","text":"SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам."}},
     {"@type":"Question","name":"Как измеряется результат?","acceptedAnswer":{"@type":"Answer","text":"Задаём ИИ-ассистентам запросы ваших клиентов до и после работы и считаем долю ответов, в которых называют вас. Для школы английского языка эта доля в ChatGPT выросла с 0% до 75%."}}
   ]
 }
@@ -94,7 +94,7 @@ body.nav-open .burger i:nth-child(2){top:19px;transform:rotate(-45deg)}
 .view{display:none}
 .view.active{display:block}
 
-.hero{height:560vh;position:relative}
+.hero{height:660vh;position:relative}
 .hero-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .stage{position:absolute;left:var(--pad);bottom:clamp(84px,13vh,150px);max-width:640px;pointer-events:none}
 .stage.on{pointer-events:auto}
@@ -168,7 +168,7 @@ textarea{min-height:110px;resize:vertical}
 .cta-final{text-align:center;padding:clamp(100px,16vw,200px) 0}
 .cta-final h2{font-size:clamp(36px,7vw,104px);max-width:1000px;margin:20px auto 34px}
 
-.page-head{padding:clamp(140px,22vh,220px) 0 clamp(50px,7vw,90px)}
+.page-head{padding-top:clamp(140px,22vh,220px);padding-bottom:clamp(50px,7vw,90px)}
 .page-head h1{font-size:clamp(44px,9vw,132px);margin:18px 0 26px}
 .page-head p{color:var(--mute);font-size:clamp(16px,1.4vw,20px);max-width:620px}
 .page-body{background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.8) 300px)}
@@ -197,6 +197,18 @@ textarea{min-height:110px;resize:vertical}
 .split div{flex:1;min-width:150px;border:1px solid rgba(0,0,0,.15);border-radius:16px;padding:14px 16px;font-size:14px}
 .split b{display:block;font-family:var(--display);font-size:20px;font-weight:500}
 
+.dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dir{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:24px;padding:28px 24px;min-height:300px;background:rgba(0,0,0,.65);transition:border-color .3s,background .3s,transform .3s}
+.dir:hover{border-color:#fff;background:#fff;color:#000;transform:translateY(-4px)}
+.dir .n{font-family:var(--mono);font-size:12px;color:var(--dim);margin-bottom:auto}
+.dir:hover .n,.dir:hover p{color:rgba(0,0,0,.6)}
+.dir h3{font-size:21px;margin:40px 0 12px}
+.dir p{color:var(--mute);font-size:15px}
+.dir .more{font-size:14px;font-weight:600;margin-top:22px;display:flex;gap:8px}
+.page-head .label a{color:var(--mute);border-bottom:1px solid var(--line2)}
+.page-head .label a:hover{color:#fff}
+select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+select option{background:#000;color:#fff}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips span{border:1px solid var(--line);border-radius:100px;padding:12px 20px;font-size:15px;background:rgba(0,0,0,.6)}
 
@@ -254,6 +266,8 @@ body.loading footer{display:none}
   .sec-head,.check,.case,.contact-grid,.plans,.case-full{grid-template-columns:1fr}
   .sec-head p{justify-self:start}
   .steps{grid-template-columns:1fr 1fr}
+  .dirs{grid-template-columns:1fr 1fr}
+  .dir{min-height:240px}
   .step{margin-right:0;padding-left:0;border-right:0;border-bottom:1px solid var(--line);padding-right:16px}
   .step .n{margin-bottom:22px}
   .price-strip{grid-template-columns:1fr}
@@ -265,7 +279,7 @@ body.loading footer{display:none}
   .hero-meta{display:none}
   .stage{right:var(--pad);bottom:96px}
 }
-@media (max-width:560px){.steps{grid-template-columns:1fr}}
+@media (max-width:560px){.steps,.dirs{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="loading">
@@ -273,7 +287,7 @@ body.loading footer{display:none}
 <div class="grain" aria-hidden="true"></div>
 
 <div id="loader" aria-hidden="true">
-  <div class="top"><span class="label">Tessera / Generative Engine Optimization</span><span class="label">Казахстан</span></div>
+  <div class="top"><span class="label">Tessera / AI-агентство</span><span class="label">Казахстан</span></div>
   <div class="bot"><span class="label" id="ldText">Собираем данные</span><span class="count"><span id="ldNum">0</span></span></div>
   <div class="bar"><i id="ldBar"></i></div>
 </div>
@@ -296,58 +310,78 @@ body.loading footer{display:none}
   <div class="hero" id="hero">
     <div class="hero-sticky">
       <div class="stage" data-i="0">
-        <span class="ln"><span class="label">Generative Engine Optimization</span></span>
-        <h1 class="title"><span class="ln"><span>Клиенты больше не гуглят.</span></span><span class="ln"><span>Они спрашивают ИИ.</span></span></h1>
-        <span class="ln"><span><p>Делаем так, чтобы ChatGPT, Gemini и другие ассистенты знали ваш бизнес и советовали именно его.</p></span></span>
+        <span class="ln"><span class="label">AI-агентство · Казахстан</span></span>
+        <h1 class="title"><span class="ln"><span>Клиенты, продажи</span></span><span class="ln"><span>и контент — на ИИ</span></span></h1>
+        <span class="ln"><span><p>SEO и GEO продвижение, AI-видео, собственные CRM и ИИ-боты, которые продают за вас.</p></span></span>
       </div>
       <div class="stage" data-i="1">
-        <span class="ln"><span class="label"><b>01</b> — Сдвиг</span></span>
-        <h2 class="title"><span class="ln"><span>Новый вход в воронку —</span></span><span class="ln"><span>ответ нейросети</span></span></h2>
-        <span class="ln"><span><p>ChatGPT, Gemini, Claude, DeepSeek и Qwen каждый день отвечают на вопросы «где готовиться к IELTS?», «куда отдать ребёнка?». В ответе — всего несколько названий.</p></span></span>
+        <span class="ln"><span class="label"><b>01</b> — SEO и GEO</span></span>
+        <h2 class="title"><span class="ln"><span>Вас находят в Google</span></span><span class="ln"><span>и в ответах ИИ</span></span></h2>
+        <span class="ln"><span><p>Поднимаем сайт в поиске и делаем так, чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen советовали именно вас.</p></span></span>
       </div>
       <div class="stage" data-i="2">
-        <span class="ln"><span class="label"><b>02</b> — Проблема</span></span>
-        <h2 class="title"><span class="ln"><span>Нет в ответе —</span></span><span class="ln"><span>нет в выборе</span></span></h2>
-        <span class="ln"><span><p>ИИ не читает сайт, собранный только на JavaScript, путает похожие названия и не находит цен и фактов. Клиент уходит к тому, кого назвали.</p></span></span>
+        <span class="ln"><span class="label"><b>02</b> — AI-видео</span></span>
+        <h2 class="title"><span class="ln"><span>Ролики без</span></span><span class="ln"><span>съёмочной группы</span></span></h2>
+        <span class="ln"><span><p>Реклама, Reels и видео о продукте, созданные ИИ. Без студии, актёров и долгого продакшна.</p></span></span>
       </div>
       <div class="stage" data-i="3">
-        <span class="ln"><span class="label"><b>03</b> — Результат</span></span>
-        <h2 class="title"><span class="ln"><span>Школа английского:</span></span><span class="ln"><span>с 0% до 75%</span></span></h2>
-        <span class="ln"><span><p>Столько ответов ChatGPT теперь упоминают нашего клиента — школу английского. До нашей работы таких ответов не было.</p></span></span>
+        <span class="ln"><span class="label"><b>03</b> — Собственная CRM</span></span>
+        <h2 class="title"><span class="ln"><span>CRM под ваш бизнес,</span></span><span class="ln"><span>а не наоборот</span></span></h2>
+        <span class="ln"><span><p>Система для заявок, клиентов и оплат, собранная под ваш процесс. Только нужные функции, данные — у вас.</p></span></span>
       </div>
       <div class="stage" data-i="4">
-        <span class="ln"><span class="label"><b>04</b> — GEO</span></span>
-        <h2 class="title"><span class="ln"><span>Чтобы ИИ нашёл,</span></span><span class="ln"><span>понял и выбрал вас</span></span></h2>
-        <span class="ln"><span><p>2–4 недели работы. Половину оплаты берём только после результата.</p></span></span>
-        <span class="ln"><span class="cta"><a class="btn" href="#contacts">Оставить заявку <span class="ar">→</span></a><a class="btn ghost" href="#services">Услуги и цены</a></span></span>
+        <span class="ln"><span class="label"><b>04</b> — ИИ-бот</span></span>
+        <h2 class="title"><span class="ln"><span>Менеджер по продажам,</span></span><span class="ln"><span>который не спит</span></span></h2>
+        <span class="ln"><span><p>Отвечает клиентам в WhatsApp, Telegram, Instagram и на сайте, знает ваши цены, ведёт к записи и передаёт тёплые заявки вам.</p></span></span>
+      </div>
+      <div class="stage" data-i="5">
+        <span class="ln"><span class="label">Tessera</span></span>
+        <h2 class="title"><span class="ln"><span>Одна команда —</span></span><span class="ln"><span>весь путь клиента</span></span></h2>
+        <span class="ln"><span><p>Видео привлекает, SEO и GEO приводят из поиска, бот продаёт, CRM ничего не теряет.</p></span></span>
+        <span class="ln"><span class="cta"><a class="btn" href="#contacts">Оставить заявку <span class="ar">→</span></a><a class="btn ghost" href="#services">Все услуги</a></span></span>
       </div>
       <div class="hero-meta">
-        <div class="num"><b id="stNum">01</b> / 05</div>
-        <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        <div class="num"><b id="stNum">01</b> / <span id="stTotal">06</span></div>
+        <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
       <div class="hint" id="hint"><span class="label">Листайте</span><span class="line"></span></div>
     </div>
   </div>
 
   <div class="after-hero">
-    <div class="marquee" aria-label="ИИ-ассистенты, с которыми мы работаем">
+    <div class="marquee" aria-label="Направления Tessera">
       <div class="track">
-        <span>ChatGPT</span><span>Gemini</span><span>Claude</span><span>DeepSeek</span><span>Qwen</span>
-        <span>ChatGPT</span><span>Gemini</span><span>Claude</span><span>DeepSeek</span><span>Qwen</span>
+        <span>SEO</span><span>GEO</span><span>AI-видео</span><span>CRM</span><span>ИИ-боты</span>
+        <span>SEO</span><span>GEO</span><span>AI-видео</span><span>CRM</span><span>ИИ-боты</span>
       </div>
     </div>
 
     <section class="sec">
       <div class="wrap">
         <div class="sec-head rv">
-          <div><span class="label">Как это работает</span><h2 style="margin-top:16px">Четыре шага до ответа ИИ</h2></div>
-          <p>Нейросети собирают ответ из того, что могут прочитать и сверить. Мы делаем так, чтобы о вас было что прочитать и всё совпадало.</p>
+          <div><span class="label">Направления</span><h2 style="margin-top:16px">Четыре услуги,<br>одна система</h2></div>
+          <p>Можно взять одно направление или собрать всё вместе: каждое усиливает остальные.</p>
+        </div>
+        <div class="dirs">
+          <a class="dir rv" href="#seo-geo"><span class="n">01</span><h3>SEO и GEO продвижение</h3><p>Google, Яндекс и ответы ChatGPT, Gemini, Claude, DeepSeek, Qwen.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
+          <a class="dir rv" href="#ai-video"><span class="n">02</span><h3>AI-видео</h3><p>Рекламные ролики, Reels, видео о продукте и говорящие аватары.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
+          <a class="dir rv" href="#crm"><span class="n">03</span><h3>Собственная CRM</h3><p>Заявки, воронка, клиенты, оплаты и аналитика под ваш процесс.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
+          <a class="dir rv" href="#ai-bots"><span class="n">04</span><h3>ИИ-бот — менеджер по продажам</h3><p>Консультирует, отвечает на вопросы и записывает клиентов круглосуточно.</p><span class="more">Подробнее <span class="ar">→</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <div><span class="label">Как это работает вместе</span><h2 style="margin-top:16px">Путь клиента без потерь</h2></div>
+          <p>Каждый этап закрывает своё направление, а данные идут дальше по цепочке.</p>
         </div>
         <div class="steps">
-          <div class="step rv"><div class="n">01 / Аудит</div><h3>Спрашиваем ИИ как клиенты</h3><p>Задаём ассистентам вопросы вашей ниши. Фиксируем, кого они называют, что говорят о вас и где ошибаются.</p></div>
-          <div class="step rv"><div class="n">02 / Сайт</div><h3>Сайт, который читают машины</h3><p>Текст прямо в HTML, страница под каждое направление, FAQ с фактами, JSON-LD и llms.txt.</p></div>
-          <div class="step rv"><div class="n">03 / Присутствие</div><h3>Одинаковые данные везде</h3><p>2GIS, Яндекс Карты, Google Maps, Search Console, Bing, IndexNow. Название, адрес и телефон совпадают во всех источниках.</p></div>
-          <div class="step rv"><div class="n">04 / Замер</div><h3>Считаем результат</h3><p>Повторяем те же запросы и показываем, в какой доле ответов теперь называют вас.</p></div>
+          <div class="step rv"><div class="n">01 / Внимание</div><h3>AI-видео</h3><p>Ролики для рекламы и соцсетей приводят людей, которые ещё не знают о вас.</p></div>
+          <div class="step rv"><div class="n">02 / Поиск</div><h3>SEO и GEO</h3><p>Когда человек ищет в Google или спрашивает ИИ, он находит вас.</p></div>
+          <div class="step rv"><div class="n">03 / Диалог</div><h3>ИИ-бот</h3><p>Бот сразу отвечает, рассказывает о ценах и условиях и доводит до записи.</p></div>
+          <div class="step rv"><div class="n">04 / Учёт</div><h3>CRM</h3><p>Каждая заявка попадает в CRM: видно, откуда клиент, на каком он этапе и сколько принёс.</p></div>
         </div>
       </div>
     </section>
@@ -356,7 +390,7 @@ body.loading footer{display:none}
       <div class="wrap">
         <div class="case rv">
           <div>
-            <span class="label">Кейс · школа английского и IELTS</span>
+            <span class="label">Кейс GEO · школа английского и IELTS</span>
             <div class="big" style="margin-top:22px"><span class="from">0%</span><span class="arrow">→</span><span>75%</span></div>
           </div>
           <div>
@@ -387,9 +421,9 @@ body.loading footer{display:none}
     <section class="sec" style="padding-top:0">
       <div class="wrap">
         <div class="price-strip rv">
-          <div><span class="label">Стоимость</span><div class="v">200 000 ₸</div><div class="s">полный GEO-запуск</div></div>
-          <div><span class="label">Срок</span><div class="v">2–4 недели</div><div class="s">от аудита до замера</div></div>
-          <div><span class="label">Оплата</span><div class="v">50 / 50</div><div class="s">вторая половина — после результата</div></div>
+          <div><span class="label">Старт</span><div class="v">Бриф</div><div class="s">разбираем бизнес и задачу</div></div>
+          <div><span class="label">План</span><div class="v">Смета и сроки</div><div class="s">фиксируем до начала работы</div></div>
+          <div><span class="label">Результат</span><div class="v">Замер</div><div class="s">показываем цифры, а не отчёты ради отчётов</div></div>
         </div>
       </div>
     </section>
@@ -397,7 +431,7 @@ body.loading footer{display:none}
     <section class="cta-final">
       <div class="wrap rv">
         <span class="label">Следующий шаг</span>
-        <h2>Пусть ИИ советует вас, а не конкурентов</h2>
+        <h2>Пусть ИИ работает на ваши продажи</h2>
         <div class="row" style="justify-content:center"><a class="btn" href="#contacts">Оставить заявку <span class="ar">→</span></a><a class="btn ghost" href="#faq">Частые вопросы</a></div>
       </div>
     </section>
@@ -407,29 +441,54 @@ body.loading footer{display:none}
 <section class="view" data-view="services">
   <div class="wrap page-head">
     <span class="label rv">Услуги</span>
-    <h1 class="rv">Всё, чтобы ИИ<br>вас назвал</h1>
-    <p class="rv">Один пакет — от аудита до замера. Без рекламы и без накруток: только факты о вашем бизнесе в форме, которую нейросети могут прочитать и проверить.</p>
+    <h1 class="rv">Четыре направления<br>Tessera</h1>
+    <p class="rv">Привлекаем, продаём и учитываем клиентов с помощью ИИ. Берите одно направление или всё вместе.</p>
   </div>
   <div class="page-body">
     <div class="wrap">
       <div class="svc">
-        <div class="svc-item rv"><div class="n">01</div><h3>Аудит видимости в ИИ</h3><div><p>Задаём ChatGPT, Gemini, Claude, DeepSeek и Qwen вопросы, которые задают ваши клиенты. Смотрим, кого называют вместо вас, что ИИ знает о вас и где ошибается.</p><div class="tags"><i>запросы ниши</i><i>конкуренты в ответах</i><i>точка отсчёта</i></div></div></div>
-        <div class="svc-item rv"><div class="n">02</div><h3>Сайт, который читают ИИ</h3><div><p>Новый сайт с нуля или переделка текущего. Весь текст в HTML без зависимости от JavaScript, три языка, отдельная страница под каждое направление.</p><div class="tags"><i>ru / kk / en</i><i>HTML без JS</i><i>страница на услугу</i></div></div></div>
-        <div class="svc-item rv"><div class="n">03</div><h3>Техническая разметка для ботов</h3><div><p>Структурированные данные о компании, услугах и вопросах. Открываем доступ ИИ-ботам и сообщаем поисковикам о каждом обновлении.</p><div class="tags"><i>JSON-LD</i><i>llms.txt</i><i>robots.txt для ИИ-ботов</i><i>sitemap</i><i>IndexNow</i></div></div></div>
-        <div class="svc-item rv"><div class="n">04</div><h3>FAQ с конкретными фактами</h3><div><p>На каждой странице — ответы, которые ИИ может процитировать: цены, сроки, требования, этапы. Чем точнее факт, тем охотнее модель его повторяет.</p><div class="tags"><i>цены</i><i>сроки</i><i>требования</i><i>этапы</i></div></div></div>
-        <div class="svc-item rv"><div class="n">05</div><h3>Карты и каталоги</h3><div><p>Создаём или приводим в порядок карточки компании. В первую очередь 2GIS и Яндекс Карты, Google Maps — как минимум.</p><div class="tags"><i>2GIS</i><i>Яндекс Карты</i><i>Google Maps</i></div></div></div>
-        <div class="svc-item rv"><div class="n">06</div><h3>Единое имя, адрес и телефон</h3><div><p>Одинаковое полное название, адрес и телефон на сайте, в картах и в Instagram. Если название общее, закрепляем устойчивую формулировку, чтобы ИИ не путал вас с другими.</p><div class="tags"><i>NAP</i><i>защита от путаницы</i></div></div></div>
-        <div class="svc-item rv"><div class="n">07</div><h3>Панели вебмастеров</h3><div><p>Подключаем Google Search Console, Bing Webmaster Tools и IndexNow, чтобы новые страницы быстро попадали в индексы, из которых ИИ берёт данные.</p><div class="tags"><i>Search Console</i><i>Bing Webmaster</i><i>IndexNow</i></div></div></div>
-        <div class="svc-item rv"><div class="n">08</div><h3>Замер результата</h3><div><p>Повторяем запросы из аудита и сравниваем: в какой доле ответов вас называли до и после. Цифра, а не ощущение.</p><div class="tags"><i>до / после</i><i>доля упоминаний</i></div></div></div>
+        <a class="svc-item rv" href="#seo-geo"><div class="n">01</div><h3>SEO и GEO продвижение</h3><div><p>Поднимаем сайт в Google и Яндексе и делаем так, чтобы ИИ-ассистенты называли вас в ответах. Сайт, разметка, карты, замер до и после.</p><div class="tags"><i>Google</i><i>Яндекс</i><i>ChatGPT</i><i>Gemini</i><i>2GIS</i></div></div></a>
+        <a class="svc-item rv" href="#ai-video"><div class="n">02</div><h3>AI-видео генерация</h3><div><p>Рекламные ролики, короткие видео для соцсетей, ролики о продукте и говорящие аватары. Сценарий, генерация, монтаж и озвучка.</p><div class="tags"><i>Reels</i><i>TikTok</i><i>Shorts</i><i>реклама</i><i>аватары</i></div></div></a>
+        <a class="svc-item rv" href="#crm"><div class="n">03</div><h3>Собственные CRM</h3><div><p>Своя система под ваш процесс: заявки, воронка, клиенты, оплаты, расписание, аналитика. Подключаем мессенджеры, сайт и ИИ-бота.</p><div class="tags"><i>заявки</i><i>воронка</i><i>оплаты</i><i>аналитика</i><i>роли</i></div></div></a>
+        <a class="svc-item rv" href="#ai-bots"><div class="n">04</div><h3>ИИ-боты — консультанты по продажам</h3><div><p>Бот, который отвечает как ваш лучший менеджер: знает услуги и цены, отвечает на вопросы, записывает клиента и передаёт заявку команде.</p><div class="tags"><i>WhatsApp</i><i>Telegram</i><i>Instagram</i><i>сайт</i><i>24/7</i></div></div></a>
       </div>
 
       <section class="sec">
-        <div class="sec-head rv"><div><span class="label">Цены</span><h2 style="margin-top:16px">Прозрачно и без абонентки по умолчанию</h2></div><p>Платите за запуск. Сопровождение — только если захотите держать результат и расти дальше.</p></div>
+        <div class="sec-head rv"><div><span class="label">Кому подходит</span><h2 style="margin-top:16px">Бизнес, которому важна каждая заявка</h2></div><p>Лучше всего наши услуги работают там, где клиент выбирает по совету, пишет в мессенджер и ждёт быстрого ответа.</p></div>
+        <div class="chips rv">
+          <span>Языковые школы</span><span>Подготовка к IELTS и SAT</span><span>Поступление за рубеж</span><span>Образовательные центры</span><span>Детские кемпы</span><span>Клиники</span><span>Салоны и студии</span><span>Локальный бизнес</span><span>Онлайн-проекты</span>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="view" data-view="seo-geo">
+  <div class="wrap page-head">
+    <span class="label rv"><a href="#services">Услуги</a> / 01</span>
+    <h1 class="rv">SEO и GEO<br>продвижение</h1>
+    <p class="rv">SEO — чтобы вас находили в Google и Яндексе. GEO — чтобы ChatGPT, Gemini, Claude, DeepSeek и Qwen называли вас в ответах. Делаем оба, потому что они опираются на одно и то же: понятный сайт и одинаковые факты везде.</p>
+  </div>
+  <div class="page-body">
+    <div class="wrap">
+      <div class="svc">
+        <div class="svc-item rv"><div class="n">01</div><h3>Аудит поиска и ответов ИИ</h3><div><p>Смотрим, где вы сейчас в Google и Яндексе, и задаём ИИ-ассистентам вопросы вашей ниши: кого они называют вместо вас и где ошибаются.</p><div class="tags"><i>запросы ниши</i><i>конкуренты</i><i>точка отсчёта</i></div></div></div>
+        <div class="svc-item rv"><div class="n">02</div><h3>Сайт, который читают поисковики и ИИ</h3><div><p>Новый сайт или переделка текущего. Весь текст в HTML, три языка, отдельная страница под каждое направление, быстрая загрузка.</p><div class="tags"><i>ru / kk / en</i><i>HTML без JS</i><i>страница на услугу</i></div></div></div>
+        <div class="svc-item rv"><div class="n">03</div><h3>SEO-оптимизация</h3><div><p>Подбираем запросы, по которым вас ищут, и оптимизируем под них страницы: заголовки, тексты, структуру и внутренние ссылки.</p><div class="tags"><i>семантика</i><i>мета-теги</i><i>структура</i><i>скорость</i></div></div></div>
+        <div class="svc-item rv"><div class="n">04</div><h3>Разметка для ботов</h3><div><p>Структурированные данные о компании, услугах и вопросах. Открываем доступ ИИ-ботам и сообщаем поисковикам о каждом обновлении.</p><div class="tags"><i>JSON-LD</i><i>llms.txt</i><i>robots.txt</i><i>sitemap</i><i>IndexNow</i></div></div></div>
+        <div class="svc-item rv"><div class="n">05</div><h3>FAQ с конкретными фактами</h3><div><p>Цены, сроки, требования, этапы — ответы, которые ИИ может процитировать, а поисковик показать в выдаче.</p><div class="tags"><i>цены</i><i>сроки</i><i>этапы</i></div></div></div>
+        <div class="svc-item rv"><div class="n">06</div><h3>Карты и единые данные</h3><div><p>Карточки в 2GIS, Яндекс Картах и Google Maps. Одинаковое название, адрес и телефон на сайте, в картах и в Instagram.</p><div class="tags"><i>2GIS</i><i>Яндекс Карты</i><i>Google Maps</i><i>NAP</i></div></div></div>
+        <div class="svc-item rv"><div class="n">07</div><h3>Панели вебмастеров</h3><div><p>Google Search Console, Яндекс Вебмастер, Bing Webmaster Tools и IndexNow, чтобы новые страницы быстро попадали в индекс.</p><div class="tags"><i>Search Console</i><i>Яндекс Вебмастер</i><i>Bing</i></div></div></div>
+        <div class="svc-item rv"><div class="n">08</div><h3>Замер результата</h3><div><p>Повторяем запросы из аудита и сравниваем: позиции в поиске и доля ответов ИИ, где вас называют, до и после.</p><div class="tags"><i>до / после</i><i>доля упоминаний</i></div></div></div>
+      </div>
+
+      <section class="sec">
+        <div class="sec-head rv"><div><span class="label">Цена</span><h2 style="margin-top:16px">GEO-запуск</h2></div><p>Фиксированная цена за запуск. Сопровождение и SEO-продвижение после запуска — по отдельной договорённости.</p></div>
         <div class="plans">
           <div class="plan main rv">
             <span class="label">GEO-запуск</span>
             <div class="p">200 000 ₸</div>
-            <div class="muted">2–4 недели · всё из списка выше</div>
+            <div class="muted">2–4 недели</div>
             <div class="split"><div><b>100 000 ₸</b>предоплата</div><div><b>100 000 ₸</b>после результата</div></div>
             <ul>
               <li>Аудит ответов ИИ по вашей нише</li>
@@ -441,25 +500,109 @@ body.loading footer{display:none}
             <a class="btn" href="#contacts">Начать <span class="ar">→</span></a>
           </div>
           <div class="plan rv">
-            <span class="label">Сопровождение</span>
+            <span class="label">SEO и сопровождение</span>
             <div class="p" style="font-size:clamp(32px,3.6vw,48px)">По запросу</div>
-            <div class="muted">после запуска</div>
+            <div class="muted">после аудита</div>
             <ul>
+              <li>Продвижение по поисковым запросам</li>
               <li>Регулярные замеры ответов ИИ</li>
               <li>Обновление цен, расписаний и фактов</li>
               <li>Новые страницы под новые направления</li>
-              <li>Контроль данных в картах</li>
             </ul>
             <a class="btn ghost" href="#contacts">Обсудить <span class="ar">→</span></a>
           </div>
         </div>
       </section>
+    </div>
+  </div>
+</section>
 
-      <section class="sec" style="padding-top:0">
-        <div class="sec-head rv"><div><span class="label">Кому подходит</span><h2 style="margin-top:16px">Бизнес, который выбирают по совету</h2></div><p>Лучше всего GEO работает там, где клиент перед покупкой спрашивает «куда пойти?» или «кого выбрать?».</p></div>
-        <div class="chips rv">
-          <span>Языковые школы</span><span>Подготовка к IELTS и SAT</span><span>Поступление за рубеж</span><span>Образовательные центры</span><span>Детские кемпы</span><span>Клиники</span><span>Салоны и студии</span><span>Локальный бизнес с одной точкой</span>
+<section class="view" data-view="ai-video">
+  <div class="wrap page-head">
+    <span class="label rv"><a href="#services">Услуги</a> / 02</span>
+    <h1 class="rv">AI-видео<br>генерация</h1>
+    <p class="rv">Видео для рекламы и соцсетей, созданное нейросетями. Вы получаете готовые ролики без студии, актёров и съёмочных дней.</p>
+  </div>
+  <div class="page-body">
+    <div class="wrap">
+      <div class="svc">
+        <div class="svc-item rv"><div class="n">01</div><h3>Рекламные ролики</h3><div><p>Короткие видео для таргета и рекламы в соцсетях: под оффер, акцию или запуск нового направления.</p><div class="tags"><i>таргет</i><i>акции</i><i>запуски</i></div></div></div>
+        <div class="svc-item rv"><div class="n">02</div><h3>Reels, TikTok, Shorts</h3><div><p>Вертикальные ролики для регулярного контента: серии, рубрики, ответы на частые вопросы клиентов.</p><div class="tags"><i>9:16</i><i>серии</i><i>контент-план</i></div></div></div>
+        <div class="svc-item rv"><div class="n">03</div><h3>Говорящие аватары</h3><div><p>ИИ-ведущий рассказывает о вашей услуге на русском, казахском или английском. Удобно для объяснений, курсов и приветствий на сайте.</p><div class="tags"><i>ru / kk / en</i><i>аватар</i><i>озвучка</i></div></div></div>
+        <div class="svc-item rv"><div class="n">04</div><h3>Ролики о продукте</h3><div><p>Показываем продукт, процесс или результат так, как его сложно или дорого снять на камеру.</p><div class="tags"><i>продукт</i><i>процесс</i><i>визуализация</i></div></div></div>
+        <div class="svc-item rv"><div class="n">05</div><h3>Анимация бренда</h3><div><p>Анимированный логотип, заставки и визуальные элементы в едином стиле для всех роликов.</p><div class="tags"><i>логотип</i><i>заставки</i><i>стиль</i></div></div></div>
+      </div>
+
+      <section class="sec">
+        <div class="sec-head rv"><div><span class="label">Как работаем</span><h2 style="margin-top:16px">От брифа до ролика</h2></div><p>Стоимость зависит от длины, количества роликов и сложности. Называем цену после брифа, до начала работы.</p></div>
+        <div class="steps">
+          <div class="step rv"><div class="n">01</div><h3>Бриф</h3><p>Цель ролика, аудитория, площадка, ключевое сообщение.</p></div>
+          <div class="step rv"><div class="n">02</div><h3>Сценарий</h3><p>Пишем сценарий и согласовываем его с вами до генерации.</p></div>
+          <div class="step rv"><div class="n">03</div><h3>Генерация и монтаж</h3><p>Создаём кадры, озвучку и музыку, собираем ролик.</p></div>
+          <div class="step rv"><div class="n">04</div><h3>Правки</h3><p>Вносим правки и отдаём файлы под нужные форматы.</p></div>
         </div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Заказать видео <span class="ar">→</span></a></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="view" data-view="crm">
+  <div class="wrap page-head">
+    <span class="label rv"><a href="#services">Услуги</a> / 03</span>
+    <h1 class="rv">Собственная<br>CRM</h1>
+    <p class="rv">Не подстраивайте бизнес под чужую систему. Мы соберём CRM под ваш процесс: только то, что нужно вашей команде, и ничего лишнего.</p>
+  </div>
+  <div class="page-body">
+    <div class="wrap">
+      <div class="svc">
+        <div class="svc-item rv"><div class="n">01</div><h3>Заявки из всех каналов</h3><div><p>Сайт, WhatsApp, Telegram, Instagram и ИИ-бот — все обращения попадают в одно место, ни одна заявка не теряется.</p><div class="tags"><i>сайт</i><i>WhatsApp</i><i>Telegram</i><i>Instagram</i></div></div></div>
+        <div class="svc-item rv"><div class="n">02</div><h3>Воронка продаж</h3><div><p>Этапы под ваш процесс: новая заявка, консультация, пробное занятие, оплата — или любые другие.</p><div class="tags"><i>этапы</i><i>задачи</i><i>напоминания</i></div></div></div>
+        <div class="svc-item rv"><div class="n">03</div><h3>Клиенты и оплаты</h3><div><p>Карточка клиента с историей общения, оплатами и договорами. Видно, кто должен и кому пора напомнить.</p><div class="tags"><i>карточки</i><i>оплаты</i><i>история</i></div></div></div>
+        <div class="svc-item rv"><div class="n">04</div><h3>Модули под отрасль</h3><div><p>Для школ — группы, расписание и посещаемость. Для клиник и салонов — запись и специалисты. Добавляем то, что нужно именно вам.</p><div class="tags"><i>расписание</i><i>группы</i><i>запись</i></div></div></div>
+        <div class="svc-item rv"><div class="n">05</div><h3>Аналитика</h3><div><p>Откуда приходят клиенты, сколько стоит заявка, какой канал приносит деньги, как работает каждый менеджер.</p><div class="tags"><i>источники</i><i>конверсия</i><i>менеджеры</i></div></div></div>
+        <div class="svc-item rv"><div class="n">06</div><h3>Роли и доступы</h3><div><p>Каждый сотрудник видит только своё: менеджер — свои заявки, руководитель — всю картину.</p><div class="tags"><i>роли</i><i>права</i></div></div></div>
+      </div>
+
+      <section class="sec">
+        <div class="sec-head rv"><div><span class="label">Как работаем</span><h2 style="margin-top:16px">От процесса к системе</h2></div><p>Стоимость зависит от набора модулей и интеграций. Считаем после разбора вашего процесса.</p></div>
+        <div class="steps">
+          <div class="step rv"><div class="n">01</div><h3>Разбор процесса</h3><p>Как к вам приходят клиенты и что происходит с заявкой дальше.</p></div>
+          <div class="step rv"><div class="n">02</div><h3>Прототип</h3><p>Показываем экраны и логику до разработки.</p></div>
+          <div class="step rv"><div class="n">03</div><h3>Разработка</h3><p>Собираем CRM и подключаем каналы и бота.</p></div>
+          <div class="step rv"><div class="n">04</div><h3>Запуск</h3><p>Переносим данные и обучаем команду.</p></div>
+        </div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Обсудить CRM <span class="ar">→</span></a></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="view" data-view="ai-bots">
+  <div class="wrap page-head">
+    <span class="label rv"><a href="#services">Услуги</a> / 04</span>
+    <h1 class="rv">ИИ-бот —<br>менеджер по продажам</h1>
+    <p class="rv">Клиент пишет ночью, в выходные или когда все менеджеры заняты — и сразу получает ответ. Бот консультирует, снимает возражения и доводит до записи.</p>
+  </div>
+  <div class="page-body">
+    <div class="wrap">
+      <div class="svc">
+        <div class="svc-item rv"><div class="n">01</div><h3>Знает ваш бизнес</h3><div><p>Обучаем бота на ваших услугах, ценах, расписании и частых вопросах. Он отвечает фактами, а не общими словами.</p><div class="tags"><i>услуги</i><i>цены</i><i>расписание</i><i>FAQ</i></div></div></div>
+        <div class="svc-item rv"><div class="n">02</div><h3>Продаёт, а не просто отвечает</h3><div><p>Уточняет потребность, предлагает подходящий вариант, отвечает на возражения и ведёт к следующему шагу: записи, пробному занятию, оплате.</p><div class="tags"><i>квалификация</i><i>возражения</i><i>запись</i></div></div></div>
+        <div class="svc-item rv"><div class="n">03</div><h3>Работает там, где ваши клиенты</h3><div><p>WhatsApp, Telegram, Instagram и чат на сайте. На русском, казахском и английском.</p><div class="tags"><i>WhatsApp</i><i>Telegram</i><i>Instagram</i><i>ru / kk / en</i></div></div></div>
+        <div class="svc-item rv"><div class="n">04</div><h3>Передаёт заявку человеку</h3><div><p>Сложный вопрос или готовый к покупке клиент — бот передаёт диалог менеджеру вместе с кратким резюме.</p><div class="tags"><i>передача</i><i>резюме</i></div></div></div>
+        <div class="svc-item rv"><div class="n">05</div><h3>Пишет всё в CRM</h3><div><p>Контакт, запрос и итог разговора сразу попадают в CRM — нашу или ту, которой вы уже пользуетесь.</p><div class="tags"><i>CRM</i><i>интеграция</i></div></div></div>
+      </div>
+
+      <section class="sec">
+        <div class="sec-head rv"><div><span class="label">Как работаем</span><h2 style="margin-top:16px">От сценария до запуска</h2></div><p>Стоимость зависит от каналов, сценариев и интеграций. Называем цену после брифа.</p></div>
+        <div class="steps">
+          <div class="step rv"><div class="n">01</div><h3>Сбор знаний</h3><p>Услуги, цены, частые вопросы и лучшие ответы ваших менеджеров.</p></div>
+          <div class="step rv"><div class="n">02</div><h3>Сценарии продаж</h3><p>Как бот ведёт разговор и когда зовёт человека.</p></div>
+          <div class="step rv"><div class="n">03</div><h3>Подключение</h3><p>Мессенджеры, сайт и CRM.</p></div>
+          <div class="step rv"><div class="n">04</div><h3>Тест и запуск</h3><p>Проверяем на реальных вопросах и дообучаем.</p></div>
+        </div>
+        <div class="row rv" style="margin-top:40px"><a class="btn" href="#contacts">Хочу бота <span class="ar">→</span></a></div>
       </section>
     </div>
   </div>
@@ -515,18 +658,26 @@ body.loading footer{display:none}
   </div>
   <div class="page-body">
     <div class="wrap faq" style="margin-bottom:clamp(80px,12vw,150px)">
-      <details class="rv" open><summary><span class="n">01</span>Что такое GEO?<span class="pl"></span></summary><div class="a">Generative Engine Optimization — подготовка бизнеса к тому, чтобы ИИ-ассистенты (ChatGPT, Gemini, Claude, DeepSeek, Qwen) находили его, правильно понимали и называли в ответах на вопросы клиентов.</div></details>
-      <details class="rv"><summary><span class="n">02</span>Чем GEO отличается от SEO?<span class="pl"></span></summary><div class="a">SEO борется за место в списке ссылок Google. GEO — за упоминание внутри готового ответа нейросети. Ассистент не показывает десять ссылок: он называет несколько вариантов и объясняет выбор. Чтобы попасть туда, ему нужны чёткие факты о вас в читаемом виде и одинаковые данные во всех источниках.</div></details>
-      <details class="rv"><summary><span class="n">03</span>Сколько это стоит?<span class="pl"></span></summary><div class="a">GEO-запуск — 200 000 ₸. 100 000 ₸ вы платите в начале, оставшиеся 100 000 ₸ — после результата. Сопровождение после запуска обсуждаем отдельно.</div></details>
-      <details class="rv"><summary><span class="n">04</span>Сколько длится работа?<span class="pl"></span></summary><div class="a">2–4 недели. Срок зависит от того, есть ли у вас сайт и как быстро вы пришлёте нужную информацию.</div></details>
-      <details class="rv"><summary><span class="n">05</span>Как вы измеряете результат?<span class="pl"></span></summary><div class="a">Составляем список запросов, которые задают ваши клиенты, задаём их ИИ-ассистентам до и после работы и считаем долю ответов, в которых называют вас. Так мы получили 0% → 75% для школы английского в ChatGPT.</div></details>
-      <details class="rv"><summary><span class="n">06</span>Гарантируете ли вы, что ИИ будет нас советовать?<span class="pl"></span></summary><div class="a">Ответы ИИ нельзя закрепить навсегда: модели обновляются, конкуренты тоже работают. Мы гарантируем полный объём работ и честный замер до и после. Поэтому вторую половину оплаты берём только после результата.</div></details>
-      <details class="rv"><summary><span class="n">07</span>Какие ИИ-ассистенты вы учитываете?<span class="pl"></span></summary><div class="a">ChatGPT, Gemini, Claude, DeepSeek и Qwen. Главный ориентир для замера — тот ассистент, которым чаще пользуются ваши клиенты.</div></details>
-      <details class="rv"><summary><span class="n">08</span>У нас нет сайта. Это проблема?<span class="pl"></span></summary><div class="a">Нет. Сделаем сайт с нуля: на русском, казахском и английском, с отдельной страницей и FAQ под каждое направление.</div></details>
-      <details class="rv"><summary><span class="n">09</span>Что нужно от нас?<span class="pl"></span></summary><div class="a">Точный адрес, часы работы, телефон, WhatsApp и Instagram; цены и форматы услуг; сроки и условия; реальные результаты клиентов и отзывы; логотип и фото. Чем больше конкретики, тем точнее ИИ будет о вас рассказывать.</div></details>
-      <details class="rv"><summary><span class="n">10</span>У нас очень распространённое название. Это мешает?<span class="pl"></span></summary><div class="a">Да, ИИ легко путает компании с общими названиями. Мы закрепляем одну полную формулировку — название, город и короткое описание — и пишем её одинаково везде: на сайте, в картах, в Instagram.</div></details>
-      <details class="rv"><summary><span class="n">11</span>Зачем 2GIS и Яндекс Карты, если речь про ИИ?<span class="pl"></span></summary><div class="a">ИИ-ассистенты опираются не только на ваш сайт. Карточки в картах с тем же адресом и телефоном подтверждают, что вы существуете и где находитесь, и добавляют вам источников.</div></details>
-      <details class="rv"><summary><span class="n">12</span>Вы пишете отзывы и результаты за нас?<span class="pl"></span></summary><div class="a">Нет. Используем только настоящие отзывы и реальные результаты. Выдуманные факты вредят: ИИ может их повторить, а клиент — проверить.</div></details>
+      <details class="rv" open><summary><span class="n">01</span>Чем занимается Tessera?<span class="pl"></span></summary><div class="a">Четырьмя направлениями: SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам. Их можно заказать по отдельности или вместе.</div></details>
+      <details class="rv"><summary><span class="n">02</span>Что такое GEO?<span class="pl"></span></summary><div class="a">Generative Engine Optimization — подготовка бизнеса к тому, чтобы ИИ-ассистенты (ChatGPT, Gemini, Claude, DeepSeek, Qwen) находили его, правильно понимали и называли в ответах на вопросы клиентов.</div></details>
+      <details class="rv"><summary><span class="n">03</span>Чем GEO отличается от SEO?<span class="pl"></span></summary><div class="a">SEO борется за место в списке ссылок Google. GEO — за упоминание внутри готового ответа нейросети. Ассистент не показывает десять ссылок: он называет несколько вариантов и объясняет выбор. Чтобы попасть туда, ему нужны чёткие факты о вас в читаемом виде и одинаковые данные во всех источниках.</div></details>
+      <details class="rv"><summary><span class="n">04</span>Сколько стоит GEO?<span class="pl"></span></summary><div class="a">GEO-запуск — 200 000 ₸. 100 000 ₸ вы платите в начале, оставшиеся 100 000 ₸ — после результата. Сопровождение после запуска обсуждаем отдельно.</div></details>
+      <details class="rv"><summary><span class="n">05</span>Сколько длится работа?<span class="pl"></span></summary><div class="a">2–4 недели. Срок зависит от того, есть ли у вас сайт и как быстро вы пришлёте нужную информацию.</div></details>
+      <details class="rv"><summary><span class="n">06</span>Как вы измеряете результат?<span class="pl"></span></summary><div class="a">Составляем список запросов, которые задают ваши клиенты, задаём их ИИ-ассистентам до и после работы и считаем долю ответов, в которых называют вас. Так мы получили 0% → 75% для школы английского в ChatGPT.</div></details>
+      <details class="rv"><summary><span class="n">07</span>Гарантируете ли вы, что ИИ будет нас советовать?<span class="pl"></span></summary><div class="a">Ответы ИИ нельзя закрепить навсегда: модели обновляются, конкуренты тоже работают. Мы гарантируем полный объём работ и честный замер до и после. Поэтому вторую половину оплаты берём только после результата.</div></details>
+      <details class="rv"><summary><span class="n">08</span>Какие ИИ-ассистенты вы учитываете?<span class="pl"></span></summary><div class="a">ChatGPT, Gemini, Claude, DeepSeek и Qwen. Главный ориентир для замера — тот ассистент, которым чаще пользуются ваши клиенты.</div></details>
+      <details class="rv"><summary><span class="n">09</span>У нас нет сайта. Это проблема?<span class="pl"></span></summary><div class="a">Нет. Сделаем сайт с нуля: на русском, казахском и английском, с отдельной страницей и FAQ под каждое направление.</div></details>
+      <details class="rv"><summary><span class="n">10</span>Что нужно от нас?<span class="pl"></span></summary><div class="a">Точный адрес, часы работы, телефон, WhatsApp и Instagram; цены и форматы услуг; сроки и условия; реальные результаты клиентов и отзывы; логотип и фото. Чем больше конкретики, тем точнее ИИ будет о вас рассказывать.</div></details>
+      <details class="rv"><summary><span class="n">11</span>У нас очень распространённое название. Это мешает?<span class="pl"></span></summary><div class="a">Да, ИИ легко путает компании с общими названиями. Мы закрепляем одну полную формулировку — название, город и короткое описание — и пишем её одинаково везде: на сайте, в картах, в Instagram.</div></details>
+      <details class="rv"><summary><span class="n">12</span>Зачем 2GIS и Яндекс Карты, если речь про ИИ?<span class="pl"></span></summary><div class="a">ИИ-ассистенты опираются не только на ваш сайт. Карточки в картах с тем же адресом и телефоном подтверждают, что вы существуете и где находитесь, и добавляют вам источников.</div></details>
+      <details class="rv"><summary><span class="n">13</span>Вы пишете отзывы и результаты за нас?<span class="pl"></span></summary><div class="a">Нет. Используем только настоящие отзывы и реальные результаты. Выдуманные факты вредят: ИИ может их повторить, а клиент — проверить.</div></details>
+      <details class="rv"><summary><span class="n">14</span>Сколько стоят AI-видео, CRM и ИИ-бот?<span class="pl"></span></summary><div class="a">Зависит от объёма: количества роликов, модулей CRM, каналов и сценариев бота. Называем точную цену и сроки после брифа, до начала работы.</div></details>
+      <details class="rv"><summary><span class="n">15</span>На каких языках работает ИИ-бот?<span class="pl"></span></summary><div class="a">На русском, казахском и английском. Бот отвечает на том языке, на котором пишет клиент.</div></details>
+      <details class="rv"><summary><span class="n">16</span>Что будет, если бот не знает ответа?<span class="pl"></span></summary><div class="a">Он не выдумывает. Сложный вопрос или клиента, готового к покупке, бот передаёт менеджеру вместе с кратким резюме диалога.</div></details>
+      <details class="rv"><summary><span class="n">17</span>Можно подключить бота к нашей CRM?<span class="pl"></span></summary><div class="a">Да. Бот записывает контакт, запрос и итог разговора в нашу CRM или в ту, которой вы уже пользуетесь.</div></details>
+      <details class="rv"><summary><span class="n">18</span>Зачем своя CRM, если есть готовые?<span class="pl"></span></summary><div class="a">Готовая CRM заставляет подстраивать процесс под неё. Своя повторяет ваш процесс: только нужные этапы, поля и отчёты, а данные остаются у вас.</div></details>
+      <details class="rv"><summary><span class="n">19</span>Подходит ли AI-видео для рекламы?<span class="pl"></span></summary><div class="a">Да. Делаем ролики под таргет и соцсети в нужных форматах: вертикальные 9:16 для Reels, TikTok и Shorts и другие под площадку.</div></details>
+      <details class="rv"><summary><span class="n">20</span>Можно заказать всё сразу?<span class="pl"></span></summary><div class="a">Да, и так эффективнее всего: видео привлекает, SEO и GEO приводят из поиска, бот продаёт, CRM учитывает каждую заявку.</div></details>
     </div>
   </div>
 </section>
@@ -535,7 +686,7 @@ body.loading footer{display:none}
   <div class="wrap page-head">
     <span class="label rv">Контакты</span>
     <h1 class="rv">Обсудим<br>ваш бизнес</h1>
-    <p class="rv">Расскажите о нише и городе. Мы сделаем бесплатную проверку: что ИИ сейчас отвечает о вас и о конкурентах.</p>
+    <p class="rv">Расскажите о бизнесе и задаче. Ответим, какие направления дадут результат быстрее всего, и назовём сроки и цену.</p>
   </div>
   <div class="page-body">
     <div class="wrap contact-grid" style="padding-bottom:clamp(80px,12vw,150px)">
@@ -543,14 +694,15 @@ body.loading footer{display:none}
         <span class="label">Что будет дальше</span>
         <div class="contact-list">
           <div><b>1. Короткий созвон</b><span>15 мин</span></div>
-          <div><b>2. Проверка ответов ИИ</b><span>бесплатно</span></div>
-          <div><b>3. План и старт</b><span>2–4 нед</span></div>
+          <div><b>2. Разбор задачи</b><span>бесплатно</span></div>
+          <div><b>3. Смета и старт</b><span>до начала работ</span></div>
         </div>
         <div class="contact-list" id="contactLinks"></div>
       </div>
       <form class="form rv" id="leadForm" novalidate>
         <label class="field"><span>Имя</span><input name="name" required placeholder="Как к вам обращаться"></label>
         <label class="field"><span>Компания и ниша</span><input name="biz" required placeholder="Например: школа английского"></label>
+        <label class="field"><span>Направление</span><select name="dir"><option>SEO и GEO продвижение</option><option>AI-видео</option><option>Собственная CRM</option><option>ИИ-бот для продаж</option><option>Несколько направлений</option></select></label>
         <label class="field"><span>Город</span><input name="city" placeholder="Астана"></label>
         <label class="field"><span>Сайт или Instagram</span><input name="site" placeholder="если есть"></label>
         <label class="field"><span>Телефон или Telegram</span><input name="contact" required placeholder="+7 …"></label>
@@ -572,10 +724,10 @@ body.loading footer{display:none}
   <div class="wrap">
     <div class="col">
       <a class="logo" href="#home" style="color:#fff"><i></i>Tessera</a>
-      <p style="max-width:340px;margin-top:10px">Делаем бизнес видимым для ChatGPT, Gemini, Claude, DeepSeek и Qwen. Казахстан.</p>
+      <p style="max-width:340px;margin-top:10px">SEO и GEO, AI-видео, собственные CRM и ИИ-боты для продаж. Казахстан.</p>
     </div>
-    <div class="col"><span class="label" style="margin-bottom:8px">Страницы</span><a href="#home">Главная</a><a href="#services">Услуги и цены</a><a href="#cases">Кейсы</a><a href="#faq">FAQ</a><a href="#contacts">Контакты</a></div>
-    <div class="col"><span class="label" style="margin-bottom:8px">Коротко</span><p>200 000 ₸ · 2–4 недели</p><p>50% после результата</p><p>Сайты на ru / kk / en</p></div>
+    <div class="col"><span class="label" style="margin-bottom:8px">Страницы</span><a href="#home">Главная</a><a href="#services">Услуги</a><a href="#cases">Кейсы</a><a href="#faq">FAQ</a><a href="#contacts">Контакты</a></div>
+    <div class="col"><span class="label" style="margin-bottom:8px">Услуги</span><a href="#seo-geo">SEO и GEO</a><a href="#ai-video">AI-видео</a><a href="#crm">Собственные CRM</a><a href="#ai-bots">ИИ-боты</a></div>
     <div class="copy"><span>© 2026 Tessera</span><span>Весь текст этого сайта лежит в HTML и читается ИИ</span></div>
   </div>
 </footer>
@@ -590,10 +742,16 @@ var CONTACTS = { telegram: "", whatsapp: "", phone: "", email: "" };
 var $ = function(s){ return document.querySelector(s); };
 var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
 var clamp = function(v,a,b){ return Math.max(a, Math.min(b, v)); };
-var ROUTES = ["home","services","cases","faq","contacts"];
+var ROUTES = ["home","services","seo-geo","ai-video","crm","ai-bots","cases","faq","contacts"];
+var SERVICE_ROUTES = { "seo-geo": 0, "ai-video": 1, "crm": 2, "ai-bots": 3 };
+var lastService = null;
 var TITLES = {
-  home: "Tessera — видимость бизнеса в ответах ИИ",
-  services: "Услуги и цены — Tessera",
+  home: "Tessera — AI-агентство: SEO и GEO, AI-видео, CRM, ИИ-боты",
+  services: "Услуги — Tessera",
+  "seo-geo": "SEO и GEO продвижение — Tessera",
+  "ai-video": "AI-видео генерация — Tessera",
+  crm: "Собственные CRM — Tessera",
+  "ai-bots": "ИИ-боты для продаж — Tessera",
   cases: "Кейсы — Tessera",
   faq: "Частые вопросы — Tessera",
   contacts: "Контакты — Tessera"
@@ -623,7 +781,11 @@ function setRoute(){
   var changed = r !== route;
   route = r;
   $$(".view").forEach(function(v){ v.classList.toggle("active", v.dataset.view === r); });
-  $$(".links a[data-r]").forEach(function(a){ a.classList.toggle("cur", a.dataset.r === r); });
+  var navR = r in SERVICE_ROUTES ? "services" : r;
+  $$(".links a[data-r]").forEach(function(a){ a.classList.toggle("cur", a.dataset.r === navR); });
+  if(r in SERVICE_ROUTES) lastService = r;
+  if(r === "contacts" && lastService){ var sel = $("#leadForm").dir; if(sel) sel.selectedIndex = SERVICE_ROUTES[lastService]; }
+  if(r === "home" || r === "services") lastService = null;
   document.body.classList.remove("nav-open");
   document.title = TITLES[r];
   if(changed){
@@ -653,6 +815,7 @@ function setStage(i){
   stageEls.forEach(function(s, k){ s.classList.toggle("on", k === i); });
   dotEls.forEach(function(d, k){ d.classList.toggle("on", k === i); });
   $("#stNum").textContent = "0" + (i + 1);
+  $("#stTotal").textContent = "0" + stageEls.length;
 }
 function onScroll(){
   $("#nav").classList.toggle("solid", window.scrollY > 40);
@@ -709,6 +872,7 @@ $("#leadForm").addEventListener("submit", function(e){
   if(miss.length){ f[miss[0]].focus(); return; }
   var lines = [
     "Заявка в Tessera",
+    "Направление: " + f.dir.value,
     "Имя: " + f.name.value.trim(),
     "Компания и ниша: " + f.biz.value.trim(),
     f.city.value.trim() ? "Город: " + f.city.value.trim() : "",
@@ -881,6 +1045,36 @@ function initGL(){
       o[i*3] = (R + r * Math.cos(v)) * Math.cos(u); o[i*3+1] = (R + r * Math.cos(v)) * Math.sin(u) * 0.9; o[i*3+2] = r * Math.sin(v);
     });
   }
+  function play(){
+    var A = [-1.0, 1.45], B = [-1.0, -1.45], C = [1.6, 0];
+    return fill(function(i, o){
+      if(i % 10 < 3){
+        var a = Math.random() * Math.PI * 2, r = 2.75 + (Math.random() - 0.5) * 0.08;
+        o[i*3] = Math.cos(a) * r; o[i*3+1] = Math.sin(a) * r; o[i*3+2] = (Math.random() - 0.5) * 0.1; return;
+      }
+      var u = Math.random(), v = Math.random();
+      if(u + v > 1){ u = 1 - u; v = 1 - v; }
+      o[i*3] = A[0] + (B[0] - A[0]) * u + (C[0] - A[0]) * v;
+      o[i*3+1] = A[1] + (B[1] - A[1]) * u + (C[1] - A[1]) * v;
+      o[i*3+2] = (Math.random() - 0.5) * 0.7;
+    });
+  }
+  function bubble(){
+    var W = 5.4, H = 3.3, R = 1.0, dots = [[-1.25, 0.25], [0, 0.25], [1.25, 0.25]];
+    function inside(x, y){
+      if(y < -H / 2 && x > -W / 2 + 0.5 && x < -W / 2 + 1.6){ var ty = (-H / 2 - y) / 0.9; return ty <= 1 && x < -W / 2 + 1.6 - ty * 1.1; }
+      var ax = Math.abs(x), ay = Math.abs(y);
+      if(ax > W / 2 || ay > H / 2) return false;
+      if(ax > W / 2 - R && ay > H / 2 - R){ var dx = ax - (W / 2 - R), dy = ay - (H / 2 - R); if(dx * dx + dy * dy > R * R) return false; }
+      for(var k = 0; k < 3; k++){ var ex = x - dots[k][0], ey = y - dots[k][1]; if(ex * ex + ey * ey < 0.2) return false; }
+      return true;
+    }
+    return fill(function(i, o){
+      var x, y, n = 0;
+      do { x = (Math.random() - 0.5) * W; y = (Math.random() - 0.5) * (H + 1.8) - 0.45; n++; } while(!inside(x, y) && n < 60);
+      o[i*3] = x; o[i*3+1] = y + 0.3; o[i*3+2] = (Math.random() - 0.5) * 0.45;
+    });
+  }
   function text(str, size, byHeight){
     var c = document.createElement("canvas"), ctx = c.getContext("2d"), fs = 220;
     var font = "800 " + fs + "px Unbounded, Arial Black, sans-serif";
@@ -903,14 +1097,13 @@ function initGL(){
   }
 
   var V = vortex();
-  var heroShapes = [V, sphere(2.5), V, V, planet()];
-  var pageShapes = { services: lattice(), cases: wave(), faq: helix(), contacts: torus() };
+  var SPH = sphere(2.5), PLAY = play(), LAT = lattice(), BUB = bubble(), PLAN = planet();
+  var heroShapes = [V, SPH, PLAY, LAT, BUB, PLAN];
+  var pageShapes = { services: PLAN, "seo-geo": SPH, "ai-video": PLAY, crm: LAT, "ai-bots": BUB, cases: wave(), faq: helix(), contacts: torus() };
   var textsReady = false;
 
   function buildTexts(){
     heroShapes[0] = text("TESSERA", 8.2, false);
-    heroShapes[2] = text("?", 4.6, true);
-    heroShapes[3] = text("75%", 7.2, false);
     textsReady = true;
   }
 
