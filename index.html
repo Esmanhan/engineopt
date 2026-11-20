@@ -33,7 +33,7 @@
     {"@type":"Question","name":"Сколько стоит GEO-запуск?","acceptedAnswer":{"@type":"Answer","text":"200 000 ₸: 100 000 ₸ предоплата и 100 000 ₸ после результата."}},
     {"@type":"Question","name":"Сколько длится работа?","acceptedAnswer":{"@type":"Answer","text":"2–4 недели."}},
     {"@type":"Question","name":"Какие услуги оказывает Tessera?","acceptedAnswer":{"@type":"Answer","text":"SEO и GEO продвижение, AI-видео генерация, собственные CRM и ИИ-боты — консультанты по продажам."}},
-    {"@type":"Question","name":"Как измеряется результат?","acceptedAnswer":{"@type":"Answer","text":"Задаём ИИ-ассистентам запросы ваших клиентов до и после работы и считаем долю ответов, в которых называют вас. Для школы английского языка эта доля в ChatGPT выросла с 0% до 75%."}}
+    {"@type":"Question","name":"Как измеряется результат?","acceptedAnswer":{"@type":"Answer","text":"Задаём ИИ-ассистентам запросы ваших клиентов до и после работы и считаем долю ответов, в которых называют вас. Для Keenfort, сети школ английского и IELTS, эта доля в ChatGPT выросла с 0% до 75%."}}
   ]
 }
 </script>
@@ -227,6 +227,11 @@ select option{background:#000;color:#fff}
 .card li{padding-left:18px;position:relative}
 .card li:before{content:"→";position:absolute;left:0;color:#fff}
 .card.wide{grid-column:1/-1}
+.kf{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+.kf div{border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.kf b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;margin-bottom:4px}
+.kf span{color:var(--mute);font-size:13px}
+@media (max-width:900px){.kf{grid-template-columns:1fr 1fr}}
 .meter{margin-top:26px;display:grid;gap:14px}
 .meter .row2{display:grid;grid-template-columns:70px 1fr 50px;gap:14px;align-items:center;font-family:var(--mono);font-size:13px;color:var(--mute)}
 .meter .tr{height:8px;border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden}
@@ -385,12 +390,12 @@ body.loading footer{display:none}
       <div class="wrap">
         <div class="case rv">
           <div>
-            <span class="label">Кейс GEO · школа английского и IELTS</span>
+            <span class="label">Кейс GEO · Keenfort, сеть школ английского и IELTS</span>
             <div class="big" style="margin-top:22px"><span class="from">0%</span><span class="arrow">→</span><span>75%</span></div>
           </div>
           <div>
             <h3 style="font-size:clamp(22px,2.2vw,30px)">Упоминания в ответах ChatGPT</h3>
-            <p>Было: школу не называли ни в одном ответе. После запуска сайта под ИИ и выравнивания данных во внешних источниках школу упоминают в трёх ответах из четырёх.</p>
+            <p>У Keenfort 52 тыс. подписчиков в Instagram, но ChatGPT не называл сеть ни в одном ответе. После запуска сайта под ИИ и выравнивания данных во внешних источниках Keenfort упоминается в трёх ответах из четырёх.</p>
             <a class="btn ghost" href="#cases">Подробнее о кейсе <span class="ar">↗</span></a>
           </div>
         </div>
@@ -612,18 +617,29 @@ body.loading footer{display:none}
   <div class="page-body">
     <div class="wrap case-full" style="padding-bottom:clamp(80px,12vw,150px)">
       <div class="card wide rv">
-        <span class="label">Школа английского и подготовки к IELTS</span>
+        <span class="label">Keenfort · сеть школ английского и IELTS</span>
         <div class="big" style="margin-top:24px"><span class="from">0%</span><span class="arrow">→</span><span>75%</span></div>
-        <p style="margin-top:18px;max-width:640px">Доля ответов ChatGPT, в которых упоминается школа. До запуска школу не называли ни разу.</p>
+        <p style="margin-top:18px;max-width:640px">Доля ответов ChatGPT, в которых упоминается Keenfort. До запуска сеть не называли ни разу.</p>
         <div class="meter rv">
           <div class="row2"><span>До</span><span class="tr"><i style="--w:1%"></i></span><span>0%</span></div>
           <div class="row2"><span>После</span><span class="tr"><i style="--w:75%"></i></span><span>75%</span></div>
         </div>
       </div>
+      <div class="card wide rv">
+        <span class="label">О клиенте</span>
+        <h3>Keenfort — сеть школ английского языка</h3>
+        <p style="max-width:760px">Курсы английского для всех возрастов и подготовка к IELTS с целью 7.0+. Филиалы в Астане и Алматы, онлайн-обучение для учеников со всего Казахстана. Keenfort — партнёр British Council по регистрации на IELTS в Астане.</p>
+        <div class="kf">
+          <div><b>Астана · Алматы</b><span>филиалы + онлайн по Казахстану</span></div>
+          <div><b>52K</b><span>подписчиков в Instagram</span></div>
+          <div><b>IELTS 7.0+</b><span>цель подготовки</span></div>
+          <div><b>British Council</b><span>партнёр по регистрации на IELTS</span></div>
+        </div>
+      </div>
       <div class="card rv">
         <span class="label">Задача</span>
         <h3>Попасть в ответы ИИ с нуля</h3>
-        <p>У школы были сильные курсы, но ИИ-ассистенты о ней не знали: при вопросах про подготовку к IELTS и английский называли других.</p>
+        <p>У сети сильный бренд в Instagram, но ИИ-ассистенты о ней не знали: на вопросы про подготовку к IELTS и курсы английского в Астане и Алматы они называли конкурентов.</p>
       </div>
       <div class="card rv">
         <span class="label">Что сделали</span>
@@ -632,7 +648,7 @@ body.loading footer{display:none}
           <li>Новый сайт: текст в HTML, ru / kk / en</li>
           <li>JSON-LD, llms.txt, robots.txt с доступом для ИИ-ботов</li>
           <li>Sitemap и IndexNow</li>
-          <li>Одинаковые данные о школе во всех источниках</li>
+          <li>Одинаковые данные о Keenfort во всех источниках</li>
         </ul>
       </div>
       <div class="card wide rv">
@@ -658,7 +674,7 @@ body.loading footer{display:none}
       <details class="rv"><summary><span class="n">03</span>Чем GEO отличается от SEO?<span class="pl"></span></summary><div class="a">SEO борется за место в списке ссылок Google. GEO — за упоминание внутри готового ответа нейросети. Ассистент не показывает десять ссылок: он называет несколько вариантов и объясняет выбор. Чтобы попасть туда, ему нужны чёткие факты о вас в читаемом виде и одинаковые данные во всех источниках.</div></details>
       <details class="rv"><summary><span class="n">04</span>Сколько стоит GEO?<span class="pl"></span></summary><div class="a">GEO-запуск — 200 000 ₸. 100 000 ₸ вы платите в начале, оставшиеся 100 000 ₸ — после результата. Сопровождение после запуска обсуждаем отдельно.</div></details>
       <details class="rv"><summary><span class="n">05</span>Сколько длится работа?<span class="pl"></span></summary><div class="a">2–4 недели. Срок зависит от того, есть ли у вас сайт и как быстро вы пришлёте нужную информацию.</div></details>
-      <details class="rv"><summary><span class="n">06</span>Как вы измеряете результат?<span class="pl"></span></summary><div class="a">Составляем список запросов, которые задают ваши клиенты, задаём их ИИ-ассистентам до и после работы и считаем долю ответов, в которых называют вас. Так мы получили 0% → 75% для школы английского в ChatGPT.</div></details>
+      <details class="rv"><summary><span class="n">06</span>Как вы измеряете результат?<span class="pl"></span></summary><div class="a">Составляем список запросов, которые задают ваши клиенты, задаём их ИИ-ассистентам до и после работы и считаем долю ответов, в которых называют вас. Так мы получили 0% → 75% в ChatGPT для Keenfort — сети школ английского языка.</div></details>
       <details class="rv"><summary><span class="n">07</span>Гарантируете ли вы, что ИИ будет нас советовать?<span class="pl"></span></summary><div class="a">Ответы ИИ нельзя закрепить навсегда: модели обновляются, конкуренты тоже работают. Мы гарантируем полный объём работ и честный замер до и после. Поэтому вторую половину оплаты берём только после результата.</div></details>
       <details class="rv"><summary><span class="n">08</span>Какие ИИ-ассистенты вы учитываете?<span class="pl"></span></summary><div class="a">ChatGPT, Gemini, Claude, DeepSeek и Qwen. Главный ориентир для замера — тот ассистент, которым чаще пользуются ваши клиенты.</div></details>
       <details class="rv"><summary><span class="n">09</span>У нас нет сайта. Это проблема?<span class="pl"></span></summary><div class="a">Нет. Сделаем сайт с нуля: на русском, казахском и английском, с отдельной страницей и FAQ под каждое направление.</div></details>
