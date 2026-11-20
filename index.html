@@ -1035,18 +1035,36 @@ function initGL(){
       o[i*3] = (R + r * Math.cos(v)) * Math.cos(u); o[i*3+1] = (R + r * Math.cos(v)) * Math.sin(u) * 0.9; o[i*3+2] = r * Math.sin(v);
     });
   }
-  function play(){
-    var A = [-1.0, 1.45], B = [-1.0, -1.45], C = [1.6, 0];
+  function film(){
+    var L = 4.3, FW = 1.22, FS = 1.38, PS = 0.44;
+    function place(x, y, o, i){
+      var cy = y + Math.sin(x * 0.55) * 0.42, cz = Math.sin(x * 0.45 + 1.0) * 1.15 + (Math.random() - 0.5) * 0.05;
+      var t = -0.18, c = Math.cos(t), sn = Math.sin(t);
+      o[i*3] = x * c - cy * sn; o[i*3+1] = x * sn + cy * c; o[i*3+2] = cz;
+    }
     return fill(function(i, o){
-      if(i % 10 < 3){
-        var a = Math.random() * Math.PI * 2, r = 2.75 + (Math.random() - 0.5) * 0.08;
-        o[i*3] = Math.cos(a) * r; o[i*3+1] = Math.sin(a) * r; o[i*3+2] = (Math.random() - 0.5) * 0.1; return;
+      var r = Math.random(), x, y, j = 0.012;
+      if(r < 0.28){
+        var rails = [1.1, 0.7, -0.7, -1.1], ry = rails[(Math.random() * 4) | 0];
+        x = (Math.random() * 2 - 1) * L; y = ry + (Math.random() - 0.5) * j * 2;
+      } else if(r < 0.52){
+        var np = Math.floor(2 * L / PS), k = (Math.random() * np) | 0, side = Math.random() < 0.5 ? 1 : -1;
+        x = -L + PS * (k + 0.5) + (Math.random() - 0.5) * 0.17; y = side * 0.9 + (Math.random() - 0.5) * 0.2;
+      } else {
+        var nf = Math.floor(2 * L / FS), f = (Math.random() * nf) | 0, cx = -L + FS * (f + 0.5) + (2 * L - nf * FS) / 2;
+        var e = Math.random();
+        if(e < 0.82){
+          var per = 2 * (FW + 1.1), d = Math.random() * per;
+          if(d < FW){ x = cx - FW / 2 + d; y = 0.55; }
+          else if(d < FW + 1.1){ x = cx + FW / 2; y = 0.55 - (d - FW); }
+          else if(d < 2 * FW + 1.1){ x = cx + FW / 2 - (d - FW - 1.1); y = -0.55; }
+          else { x = cx - FW / 2; y = -0.55 + (d - 2 * FW - 1.1); }
+          x += (Math.random() - 0.5) * j * 2; y += (Math.random() - 0.5) * j * 2;
+        } else {
+          x = cx + (Math.random() - 0.5) * FW * 0.92; y = (Math.random() - 0.5) * 1.0;
+        }
       }
-      var u = Math.random(), v = Math.random();
-      if(u + v > 1){ u = 1 - u; v = 1 - v; }
-      o[i*3] = A[0] + (B[0] - A[0]) * u + (C[0] - A[0]) * v;
-      o[i*3+1] = A[1] + (B[1] - A[1]) * u + (C[1] - A[1]) * v;
-      o[i*3+2] = (Math.random() - 0.5) * 0.7;
+      place(x, y, o, i);
     });
   }
   function bubble(){
@@ -1087,7 +1105,7 @@ function initGL(){
   }
 
   var V = vortex();
-  var SPH = sphere(2.5), PLAY = play(), LAT = lattice(), BUB = bubble(), PLAN = planet();
+  var SPH = sphere(2.5), PLAY = film(), LAT = lattice(), BUB = bubble(), PLAN = planet();
   var heroShapes = [V, SPH, PLAY, LAT, BUB, PLAN];
   var pageShapes = { services: PLAN, "seo-geo": SPH, "ai-video": PLAY, crm: LAT, "ai-bots": BUB, cases: wave(), faq: helix(), contacts: torus() };
   var textsReady = false;
